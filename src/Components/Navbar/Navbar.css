@@ -1,0 +1,133 @@
+/* .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  background-color: rgb(235, 226, 226);
+}
+
+.header .logo img {
+  width: 130%;
+  height: 3rem;
+  top: 0;
+  left: 0;
+}
+
+.header .navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .navbar ul li {
+  margin: 0 1.5rem;
+}
+
+.header .navbar ul li a {
+  font-size: 2rem;
+  color: #191717;
+}
+
+.header .navbar ul li a:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.header .logo i {
+  padding: 0.5rem;
+}
+
+.header .fa-bars {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+} */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+}
+.header.scrolled .navbar ul li a {
+  color: #100f0f !important; /* Change text color to black when scrolled */
+  /* font-weight: 600; */
+  /* font-size: 20px; */
+}
+.header.scrolled .navbar {
+  border: 0.5px solid orange;
+  background-color: orange;
+  border-radius: 10px;
+}
+.header.scrolled button {
+  color: white;
+  background-color: rgb(17, 16, 16);
+}
+.header .logo img {
+  width: 130%;
+  height: 11rem;
+  top: 0;
+  left: 0;
+}
+/* .header.scrolled {
+  color: white;
+  background-color: rgb(17, 16, 16);
+} */
+.logo img {
+  height: 11rem;
+}
+
+.header .navbar ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .navbar ul li {
+  margin: 0 1.5rem;
+}
+
+.header .navbar ul li a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.header .navbar ul li a:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.header .logo i {
+  padding: 0.5rem;
+}
+
+.header .fa-bars {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+}
+
+header .buttons {
+  border: none;
+  background-color: #f48c06;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
