@@ -44,3 +44,7 @@
 .clients .owl-dot.active {
   background-color: #4f84c4;
 }
+.slick-slider {
+  width: 90%;
+  margin: auto;
+}

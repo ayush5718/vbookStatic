@@ -161,341 +161,41 @@ const OurTeam = () => {
           <h2>Lorem ipsum dolor sit.</h2>
         </section>
         {/* Page Container */}
-        <div className="flex items-center justify-center min-h-screen bg-white py-48">
-          <div className="flex flex-col">
-            {/* Notes */}
-            <span className="text-center font-bold my-10 opacity-30">
-              Lorem ipsum dolor sit amet.
-            </span>
-            <div className="flex flex-col mt-8">
-              {/* Meet the Team */}
-              <div className="container max-w-[130rem] px-4 ">
-                {/* Section Header */}
-                <div className="flex flex-wrap justify-center text-center mb-24">
-                  <div className="w-full lg:w-6/12 px-4">
-                    {/* Header */}
-                    <h1 className="text-[#F48C08] text-8xl font-bold mb-8">
-                      Meet the Team
-                    </h1>
-                    {/* Description */}
-                    <p className="text-gray-700 text-lg font-light">
-                      With over 100 years of combined experience, we've got a
-                      well-seasoned team at the helm.
-                    </p>
-                  </div>
-                </div>
-                {/* Team Members */}
-                <div className="flex flex-wrap justify-center gap-[100px]">
-                  {/* Member #1 */}
-                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                    <div className="flex flex-col w-[300px]">
-                      {/* Avatar */}
-                      <a href="#" className="mx-auto">
-                        <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 h-[300px]"
-                          src={vaibhav}
-                        />
-                      </a>
-                      {/* Details */}
-                      <div className="text-center mt-6">
-                        {/* Name */}
-                        <h1 className="text-gray-900 text-2xl font-bold mb-1">
-                          Vaibhav Patel
-                        </h1>
-                        {/* Title */}
-                        <div className="text-gray-700 font-light mb-2 text-xl">
-                          Founder &amp; Specialist
-                        </div>
-                        {/* Social Icons */}
-                        <div
-                          className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300 gap-3"
-                        >
-                          {/* Linkedin */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-linkedin text-indigo-500 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Twitter */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-twitter text-blue-300 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Instagram */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Member #2 */}
-                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                    <div className="flex flex-col w-[300px]">
-                      {/* Avatar */}
-                      <a href="#" className="mx-auto">
-                        <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 h-[300px]"
-                          src={shubhashish}
-                        />
-                      </a>
-                      {/* Details */}
-                      <div className="text-center mt-6">
-                        {/* Name */}
-                        <h1 className="text-gray-900 text-2xl font-bold mb-1">
-                          Shubhashish Halder
-                        </h1>
-                        {/* Title */}
-                        <div className="text-gray-700 font-light mb-2 text-xl">
-                          Co-Founder &amp; M. Specialist
-                        </div>
-                        {/* Social Icons */}
-                        <div
-                          className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300 gap-3"
-                        >
-                          {/* Linkedin */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Twitter */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Instagram */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Member #3 */}
-                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                    <div className="flex flex-col w-[300px]">
-                      {/* Avatar */}
-                      <a href="#" className="mx-auto">
-                        <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 h-[300px]"
-                          src={bhavesh}
-                        />
-                      </a>
-                      {/* Details */}
-                      <div className="text-center mt-6">
-                        {/* Name */}
-                        <h1 className="text-gray-900 text-2xl font-bold mb-1">
-                          Bhavesh Kumar
-                        </h1>
-                        {/* Title */}
-                        <div className="text-gray-700 font-light mb-2 text-xl">
-                          Tech Lead
-                        </div>
-                        {/* Social Icons */}
-                        <div
-                          className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300 gap-3"
-                        >
-                          {/* Linkedin */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Twitter */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Instagram */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Member #4 */}
-                </div>
-                <br /> <br />
-                <div className="another-section flex flex-wrap justify-center gap-[100px]">
-                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4 ">
-                    <div className="flex flex-col w-[300px]">
-                      {/* Avatar */}
-                      <a href="#" className="mx-auto">
-                        <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 h-[300px]"
-                          src={nilanjan}
-                        />
-                      </a>
-                      {/* Details */}
-                      <div className="text-center mt-6">
-                        {/* Name */}
-                        <h1 className="text-gray-900 text-2xl font-bold mb-1">
-                          Nilanjan Bhattacharya
-                        </h1>
-                        {/* Title */}
-                        <div className="text-gray-700 font-light mb-2 text-xl">
-                          Backend Developer
-                        </div>
-                        {/* Social Icons */}
-                        <div
-                          className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300 gap-3"
-                        >
-                          {/* Linkedin */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Twitter */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Instagram */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* another team members */}
-                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                    <div className="flex flex-col w-[300px]">
-                      {/* Avatar */}
-                      <a href="#" className="mx-auto">
-                        <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 h-[300px]"
-                          src={nawlesh}
-                        />
-                      </a>
-                      {/* Details */}
-                      <div className="text-center mt-6">
-                        {/* Name */}
-                        <h1 className="text-gray-900 text-2xl font-bold mb-1">
-                          Nawlesh Nand
-                        </h1>
-                        {/* Title */}
-                        <div className="text-gray-700 font-light mb-2 text-xl">
-                          Tech Lead
-                        </div>
-                        {/* Social Icons */}
-                        <div
-                          className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300 gap-3"
-                        >
-                          {/* Linkedin */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Twitter */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Instagram */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* team members  */}
-                  <div className="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-                    <div className="flex flex-col w-[300px]">
-                      {/* Avatar */}
-                      <a href="#" className="mx-auto">
-                        <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 h-[300px]"
-                          src={aayush}
-                        />
-                      </a>
-                      {/* Details */}
-                      <div className="text-center mt-6">
-                        {/* Name */}
-                        <h1 className="text-gray-900 text-2xl font-bold mb-1">
-                          Aayush
-                        </h1>
-                        {/* Title */}
-                        <div className="text-gray-700 font-light mb-2 text-xl">
-                          Tech Lead
-                        </div>
-                        {/* Social Icons */}
-                        <div
-                          className="flex items-center justify-center opacity-50 hover:opacity-100
-                          transition-opacity duration-300 gap-3"
-                        >
-                          {/* Linkedin */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-indigo-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-linkedin text-indigo-700 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Twitter */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-blue-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-twitter text-blue-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                          {/* Instagram */}
-                          <a
-                            href="#"
-                            className="flex rounded-full hover:bg-orange-50 h-10 w-10"
-                          >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2 text-[30px]" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/*teams  */}
+        <section className="hero teams-section">
+          <div className="card-1">
+            <h1 className="card-1-heading">Vaibhav Patel</h1>
+            <p className="card-1-desc text-black">
+              Où professionalisme s’allie avec passion. Depuis plus de 5 ans
+              maintenant, j’exerce mon métier avec la passion qui m’anime :
+              capturer l’essence de chaque instant.
+            </p>
+            <a className="cta" href="#">
+              CONTACTEZ-MOI
+            </a>
           </div>
-        </div>
+          <img
+            src="https://silkroad007.github.io/Images/robbie-lens.png"
+            alt=""
+          />
+        </section>
+        <section className="hero teams-section">
+          <img
+            src="https://silkroad007.github.io/Images/robbie-lens.png"
+            alt=""
+          />
+          <div className="card-1">
+            <h1 className="card-1-heading">Vaibhav Patel</h1>
+            <p className="card-1-desc text-black">
+              Où professionalisme s’allie avec passion. Depuis plus de 5 ans
+              maintenant, j’exerce mon métier avec la passion qui m’anime :
+              capturer l’essence de chaque instant.
+            </p>
+            <a className="cta" href="#">
+              CONTACTEZ-MOI
+            </a>
+          </div>
+        </section>
       </>
     </>
   );

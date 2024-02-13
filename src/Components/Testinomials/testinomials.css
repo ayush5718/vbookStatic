@@ -1,4 +1,4 @@
-.testimonials {
+/* .testimonials {
   position: relative;
   padding: 90px 0 60px 0;
   background: #f2f2f2;
@@ -78,7 +78,7 @@
 .slick-next:before {
   margin-left: -12px;
   font-size: 43px;
-  color: #f56804;
+  color: #01adef;
 }
 .slick-track {
   left: 72px;
@@ -89,4 +89,104 @@
 .slick-list {
   margin: 60px;
   gap: 20px;
+} */
+/* .testimonial-item {
+  background: #ffffff;
+  margin: 0 10px !important; /* Adjust the margin as needed 
 }
+.slick-slide {
+  margin: 10px;
+}*/
+.testimonial-section {
+  /* background: url(https://cdn2.hubspot.net/hubfs/346178/Assets-Dec16/testimonial-bg.png)
+    no-repeat; */
+  background-color: #01adef;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  table-layout: fixed;
+  padding: 10px 0 10px;
+}
+
+.testimonials {
+  text-align: center;
+  width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (width<=720px) {
+  .testimonials {
+    width: 300px;
+    /* padding: 30px; */
+  }
+}
+.testimonial {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonial .details span {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: Gibson;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 21px;
+  text-align: center;
+}
+.testimonial p {
+  max-width: 770px;
+  margin: 0 auto;
+  text-align: center;
+  color: #eceef4;
+  font-family: Gibson;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.testimonial img {
+  text-align: center;
+  max-width: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+/* 
+.slick-prev:before {
+  width: 72px;
+  height: 72px;
+  background: url(//www.gobillable.com/2225413/Assets-2016/arrow-right-rollover-state.png)
+    no-repeat;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+  filter: grayscale(0);
+  -webkit-filter: grayscale();
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  transform-origin: 50% 25%;
+} */
+
+/* .slick-next:before {
+  width: 72px;
+  height: 72px;
+  background: url(http://www.gobillable.com/2225413/Assets-2016/arrow-right-rollover-state.png)
+    no-repeat;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+  filter: grayscale(0);
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  transform-origin: 50% 25%;
+} */

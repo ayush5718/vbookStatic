@@ -1,0 +1,22 @@
+.slider-content {
+  background: url("https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149177092.jpg?w=1060&t=st=1707736300~exp=1707736900~hmac=2d9ce935ce55ef50eddba697f834dc619a418fdec1deac6971615a80fb665efa");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.slider-content-2 {
+  background: url("https://img.freepik.com/free-vector/3d-black-spheres-space-background_87202-1121.jpg?w=1060&t=st=1707739543~exp=1707740143~hmac=ab3c6878a7780e6bada16b7138432efa5b6b748611b791d86b13fb7ae8aa28a8");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider-content-3 {
+  background: url("https://img.freepik.com/free-vector/background-wave-pattern-design-gradient-illustrations_483537-1338.jpg?w=1060&t=st=1707739623~exp=1707740223~hmac=6952da95ebaf422f3ae8b2978d1bc143361d872143893d0d75b15d9db6d42375");
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}

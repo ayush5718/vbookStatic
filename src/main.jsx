@@ -1,4 +1,5 @@
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import ReactDOM from "react-dom/client";
 import {
   Route,
@@ -15,6 +16,7 @@ import Contact from "./Components/Contact/Contact.jsx";
 import StudentPreRegisteration from "./Components/PreRegisteration/StudentPreRegisteration.jsx";
 import Teacher from "./Components/Teacher/Teacher.jsx";
 import OurTeam from "./Components/OurTeam/OurTeam.jsx";
+// import NewPage from "./Components/Gaurav/NewPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/teacher" element={<Teacher />} />
       <Route path="/ourteams" element={<OurTeam />} />
       <Route path="/registeration" element={<StudentPreRegisteration />} />
+      {/* <Route path="/gaurav" element={<NewPage />} /> */}
     </Route>
   )
 );

@@ -1,91 +1,4 @@
-// import React from 'react'
-// import "./testinomials.css"
-// import testimonial1 from '/src/assets/images/testimonial-1.jpg';
-// import testimonial2 from '/src/assets/images/testimonial-2.jpg';
-// import testimonial3 from '/src/assets/images/testimonial-3.jpg';
-// import testimonial4 from '/src/assets/images/testimonial-4.jpg';
-// import testimonial5 from '/src/assets/images/testimonial-5.jpg';
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// const Testinomials = () => {
-//     const settings = {
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         slidesToShow: 3,
-//         slidesToScroll: 1
-//       };
-//   return (
-//     <>
-//     <div className="testimonials mt-100">
-//     <div className="container">
-//       <div className="section-header" style={{ textAlign: "center" }}>
-//         <h2 style={{ marginTop: "-15rem" }}>Testimonials</h2>
-//         <p style={{ fontSize: "2rem" }}>See what people have to say about us</p>
-//       </div>
-//       <div className="owl-carousel testimonials-carousel">
-//       <Slider {...settings}>
-//         <div className="testimonial-item row align-items-center">
-//           <div className="testimonial-img">
-//             <img src={testimonial1} alt="Testimonial image" />
-//           </div>
-//           <div className="testimonial-text">
-//             <h3>Person-1</h3>
-//             <h4>Designation</h4>
-//             <p>Testimonial</p>
-//           </div>
-//         </div>
-//         <div className="testimonial-item row align-items-center">
-//           <div className="testimonial-img">
-//           <img src={testimonial2} alt="Testimonial image" />
-//           </div>
-//           <div className="testimonial-text">
-//             <h3>Person-2</h3>
-//             <h4>Designation</h4>
-//             <p>Testimonial</p>
-//           </div>
-//         </div>
-//         <div className="testimonial-item row align-items-center">
-//           <div className="testimonial-img">
-//           <img src={testimonial3} alt="Testimonial image" />
-//           </div>
-//           <div className="testimonial-text">
-//             <h3>Person-3</h3>
-//             <h4>Designation</h4>
-//             <p>Testimonial</p>
-//           </div>
-//         </div>
-//         <div className="testimonial-item row align-items-center">
-//           <div className="testimonial-img">
-//           <img src={testimonial4} alt="Testimonial image" />
-//           </div>
-//           <div className="testimonial-text">
-//             <h3>Person-4</h3>
-//             <h4>Designation</h4>
-//             <p>Testimonial</p>
-//           </div>
-//         </div>
-//         <div className="testimonial-item row align-items-center">
-//           <div className="testimonial-img">
-//           <img src={testimonial5} alt="Testimonial image" />
-//           </div>
-//           <div className="testimonial-text">
-//             <h3>Person-5</h3>
-//             <h4>Designation</h4>
-//             <p>Testimonial</p>
-//           </div>
-//         </div>
-//         </Slider>
-//       </div>
-//     </div>
-//   </div>
-//     </>
-//   )
-// }
-
-// export default Testinomials
-
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -96,93 +9,261 @@ import testimonial4 from "/src/assets/images/testimonial-4.jpg";
 import testimonial5 from "/src/assets/images/testimonial-5.jpg";
 import "./testinomials.css";
 
-function Testinomials(props) {
-  //   function SampleNextArrow(props) {
-  //     const { className, style, onClick } = props;
-  //     return (
-  //       <div
-  //         className={}
-  //         style={{ ...style, display: "", background: "red" }}
-  //         onClick={onClick}
-  //       />
-  //     );
-  //   }
-
-  //   function SamplePrevArrow(props) {
-  //     const { className, style, onClick } = props;
-  //     return (
-  //       <div
-  //         className="bg-red-400 block"
-  //         style={{ ...style, display: "", background: "green" }}
-  //         onClick={onClick}
-  //       />
-  //     );
-  //   }
+function Testinomials() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
   const data = [
     {
       name: `John Morgan`,
-      img: `${testimonial1}`,
+      img: testimonial1,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
       name: `Ellie Anderson`,
-      img: `${testimonial2}`,
+      img: testimonial2,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
       name: `Nia Adebayo`,
-      img: `${testimonial3}`,
+      img: testimonial3,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
       name: `Rigo Louie`,
-      img: `${testimonial4}`,
+      img: testimonial4,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
     {
       name: `Mia Williams`,
-      img: `${testimonial5}`,
+      img: testimonial5,
       review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
     },
   ];
 
   return (
-    <div className=" text-center w-[85%] mx-auto">
-      <div className="mt-20">
-        <Slider {...settings}>
-          {data.map((d) => (
-            <div
-              key={d.name}
-              className="bg-white h-[450px] text-black rounded-xl m-10 w-0 mt-[100px]"
-            >
-              <div className="h-[180px] w-[300px] bg-orange-400 flex justify-center items-center rounded-t-xl">
-                <img src={d.img} alt="" className="h-56 rounded-full" />
-              </div>
-
-              <div className="flex flex-col items-center justify-center gap-4 p-4 h-[260px] w-[300px]">
-                <p className="text-5xl font-semibold">{d.name}</p>
-                <p className="text-center text-2xl border-b-4 p-3">
-                  {d.review}
-                </p>
-                {/* <button className="bg-gray-800 text-white text-xl px-6 py-6 rounded-xl">
-                  Read More
-                </button> */}
+    <>
+      {/* <section class="testimonial-section">
+        <div class="testimonials sm:w-[300px] lg:w-[1100px]">
+          <Slider {...settings}>
+            <div class="testimonial">
+              <p>
+                “InboundLabs helped me to find the weak points of our web
+                presence. It is important to get an external view of your
+                strategy and they have helped us so much in this point. They
+                have been very professional and honest with their proposals.
+                Highly recommended.”
+              </p>
+              <img src="https://w.inboundlabs.co/hubfs/lital-headshot.png?t=1516719436914" />
+              <div class="details">
+                <span>SERGIO GAZEAU</span>
+                <span>Company Name Digital Marketing Manager.</span>
               </div>
             </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+
+            <div class="testimonial">
+              <p>
+                “InboundLabs helped me to find the weak points of our web
+                presence. It is important to get an external view of your
+                strategy and they have helped us so much in this point. They
+                have been very professional and honest with their proposals.
+                Highly recommended.”
+              </p>
+              <img src="https://w.inboundlabs.co/hubfs/T024FNRMZ-U053S4LT1-38a6c5d03ba7-72.jpg?t=1516719436914" />
+              <div class="details">
+                <span>SERGIO GAZEAU</span>
+                <span>Company Name Digital Marketing Manager.</span>
+              </div>
+            </div>
+          </Slider>
+        </div>
+      </section> */}
+      <section class="bg-white">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-sm">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+              Testimonials
+            </h2>
+            <p class="mb-8 font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+              Explore the whole collection of open-source web components and
+              elements built with the utility classes from Tailwind
+            </p>
+          </div>
+          <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-white dark:border-gray-700">
+              <blockquote class="mx-auto mb-8 max-w-2xl text-black text-2xl">
+                <h3 class="text-lg font-semibold text-black">
+                  Speechless with how easy this was to integrate
+                </h3>
+                <p class="my-4">
+                  "I recently got my hands on Flowbite Pro, and holy crap, I'm
+                  speechless with how easy this was to integrate within my
+                  application. Most templates are a pain, code is scattered, and
+                  near impossible to theme.
+                </p>
+                <p class="my-4">
+                  Flowbite has code in one place and I'm not joking when I say
+                  it took me a matter of minutes to copy the code, customise it
+                  and integrate within a Laravel + Vue application.
+                </p>
+                <p class="my-4">
+                  If you care for your time, I hands down would go with this."
+                </p>
+              </blockquote>
+              <figcaption class="flex justify-center items-center space-x-3">
+                <img
+                  class="w-9 h-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                  alt="profile picture"
+                />
+                <div class="space-y-0.5 font-medium text-black">
+                  <div>Bonnie Green</div>
+                  <div class="text-sm font-light text-black">
+                    Developer at Open AI
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-white dark:border-gray-700">
+              <blockquote class="mx-auto mb-8 max-w-2xl text-black text-2xl">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Solid foundation for any project
+                </h3>
+                <p class="my-4">
+                  "FlowBite provides a robust set of design tokens and
+                  components based on the popular Tailwind CSS framework. From
+                  the most used UI components like forms and navigation bars to
+                  the whole app screens designed both for desktop and mobile,
+                  this UI kit provides a solid foundation for any project.
+                </p>
+                <p class="my-4">
+                  Designing with Figma components that can be easily translated
+                  to the utility classes of Tailwind CSS is a huge timesaver!"
+                </p>
+              </blockquote>
+              <figcaption class="flex justify-center items-center space-x-3">
+                <img
+                  class="w-9 h-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                  alt="profile picture"
+                />
+                <div class="space-y-0.5 font-medium text-black text-left">
+                  <div>Roberta Casas</div>
+                  <div class="text-sm font-light text-black">
+                    Lead designer at Dropbox
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r dark:bg-white dark:border-gray-700">
+              <blockquote class="mx-auto mb-8 max-w-2xl text-black text-2xl">
+                <h3 class="text-lg font-semibold text-black text-black">
+                  Mindblowing workflow and variants
+                </h3>
+                <p class="my-4">
+                  "As someone who mainly designs in the browser, I've been a
+                  casual user of Figma, but as soon as I saw and started playing
+                  with FlowBite my mind was 🤯.
+                </p>
+                <p class="my-4">
+                  Everything is so well structured and simple to use (I've
+                  learnt so much about Figma by just using the toolkit).
+                </p>
+                <p class="my-4">
+                  Aesthetically, the well designed components are beautiful and
+                  will undoubtedly level up your next application."
+                </p>
+              </blockquote>
+              <figcaption class="flex justify-center items-center space-x-3">
+                <img
+                  class="w-9 h-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                  alt="profile picture"
+                />
+                <div class="space-y-0.5 font-medium dark:text-black text-left">
+                  <div>Jese Leos</div>
+                  <div class="text-sm font-light text-black text-black">
+                    Software Engineer at Facebook
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-gray-200 md:p-12 dark:bg-white dark:border-gray-700">
+              <blockquote class="mx-auto mb-8 max-w-2xl text-black dark:text-gray-400 text-2xl">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  Efficient Collaborating
+                </h3>
+                <p class="my-4">
+                  "This is a very complex and beautiful set of elements. Under
+                  the hood it comes with the best things from 2 different
+                  worlds: Figma and Tailwind.
+                </p>
+                <p class="my-4">
+                  You have many examples that can be used to create a fast
+                  prototype for your team."
+                </p>
+              </blockquote>
+              <figcaption class="flex justify-center items-center space-x-3">
+                <img
+                  class="w-9 h-9 rounded-full"
+                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                  alt="profile picture"
+                />
+                <div class="space-y-0.5 font-medium text-black text-left">
+                  <div>Joseph McFall</div>
+                  <div class="text-sm font-light text-black dark:text-gray-400">
+                    CTO at Google
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="text-center">
+            <a
+              href="#"
+              class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            >
+              Show more...
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
+
 export default Testinomials;

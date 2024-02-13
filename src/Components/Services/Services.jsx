@@ -1,179 +1,198 @@
 import React from "react";
 import "./Services.css";
-import services from "/src/assets/images/services1.gif";
+import services1 from "/src/assets/images/whatisVbook.gif";
+import services2 from "/src/assets/images/whatisVbook2.gif";
+import services3 from "/src/assets/images/whatisVbook3.gif";
+
 const Services = () => {
   return (
     <>
-      {/* <!-- intro section starts  --> */}
-      <section className="intro mt-5">
-        <div className="heading text-7xl">
-          <h3 className="">
-            What is <span className="text-red-400">V-book?</span>
-          </h3>
-          <p className="text-2xl mb-5">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque odio
-            delectus voluptatibus consequuntur officiis similique possimus, nam
-            ea iste inventore iure eos quis. Corrupti vero dolorum, suscipit
-            voluptas debitis et saepe magni accusamus, eos, totam laboriosam
-            repellat reprehenderit commodi excepturi.
-          </p>
-        </div>
-      </section>
-
-      {/* main section-1 starts */}
-      <section className="everything mt-6">
-        <div className="main">
-          <div className="content ml-[107px]">
-            <div className="orange-circle"></div>
-            <h4>
-              Everything you can do in a physical classroom,{" "}
-              <span>you can do with V-book</span>
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae ut, voluptates sequi at quidem autem, eos minus,
-              commodi fuga amet magni eius ab. Assumenda nesciunt dignissimos
-              quas dolore sed a?
-            </p>
-            <a href="">Learn More</a>
+      {/* <div className="flex flex-col items-center justify-center min-h-screen  font-poppins px-4 lg:px-20">
+        <section className="container_services mx-auto py-8 lg:py-12 mt-[10vh]">
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="w-full lg:w-5/12 mb-8">
+              <div className="text-blue-400 uppercase font-semibold">
+                Who we are
+              </div>
+              <h2 className="mt-4 mb-6 text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-300">
+                We are the large business expert in Europe and Asia
+              </h2>
+              <p className="mb-6 text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div className="w-full lg:w-5/12 mb-8">
+              <img
+                src={services1}
+                alt=""
+                className="w-full h-auto rounded-3xl"
+              />
+            </div>
           </div>
-          <div className="img">
-            <div className="blue"></div>
-            <div className="orange"></div>
-            <img src={services} alt="" />
-            <div className="play">
-              <i className="bi bi-play-fill"></i>
+        </section>
+
+        <section className="container_services mx-auto py-8 lg:py-12 mt-[10vh]">
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="w-[50%] lg:w-5/12 mb-8">
+              <img
+                src={services2}
+                alt=""
+                className="w-full h-auto rounded-3xl"
+              />
+            </div>
+            <div className="w-full lg:w-5/12 mb-8">
+              <div className="text-blue-400 uppercase font-semibold">
+                Who we are
+              </div>
+              <h2 className="mt-4 mb-6 text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-300">
+                We are the large business expert in Europe and Asia
+              </h2>
+              <p className="mb-6 text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="container_services mx-auto py-8 lg:py-12 mt-[10vh]  ">
+          <div className="flex flex-wrap justify-center items-center">
+            <div className="w-full lg:w-5/12 mb-8">
+              <div className="text-blue-400 uppercase font-semibold">
+                Who we are
+              </div>
+              <h2 className="mt-4 mb-6 text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-300">
+                We are the large business expert in Europe and Asia
+              </h2>
+              <p className="mb-6 text-gray-600 dark:text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div className="w-full lg:w-6/12 mb-8">
+              <img
+                src="https://i.postimg.cc/kGjX7T1M/pexels-andrea-piacquadio-3756679.jpg"
+                alt="aboutimage"
+                className="w-full h-auto rounded-lg"
+              />
+              <div className="absolute bottom-0 right-0 z-10 p-4 bg-white shadow dark:bg-gray-800">
+                <p className="text-sm font-semibold">
+                  Providing business solutions for 10 years
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> */}
+      <main className="p-5">
+        <div className="py-16 bg-white">
+          <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+            <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+              <div className="md:5/12 lg:w-5/12">
+                <img
+                  src={services1}
+                  alt="image"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+              <div className="md:7/12 lg:w-6/12 text-2xl">
+                <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
+                  what is V-book?
+                </h2>
+                <p className="mt-6 text-gray-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                  omnis voluptatem accusantium nemo perspiciatis delectus atque
+                  autem! Voluptatum tenetur beatae unde aperiam, repellat
+                  expedita consequatur! Officiis id consequatur atque
+                  doloremque!
+                </p>
+                <p className="mt-4 text-gray-600">
+                  {" "}
+                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
+                  iure expedita at? Asperiores nemo possimus nesciunt dicta
+                  veniam aspernatur quam mollitia.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* <!-- ui section starts  --> */}
-      <section className="user-interface">
-        <div className="main">
-          <div className="img">
-            {/* <div className="blue"></div> */}
-            <div className="orange"></div>
-            <img
-              src="https://www.shutterstock.com/shutterstock/photos/1145576060/display_1500/stock-photo-smiling-female-lecturer-helping-student-during-her-class-student-in-a-lecture-with-helpful-teacher-1145576060.jpg"
-              alt=""
-            />
-          </div>
-          <div className="content">
-            <h4>
-              A <span> user interface</span> designed for the classroom
-            </h4>
-            <ul className="list">
-              <li>
-                <svg
-                  viewBox="0 0 27 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
-                >
-                  <rect
-                    width="11.8182"
-                    height="11.8182"
-                    rx="2"
-                    fill="#2F327D"
-                  ></rect>
-                  <rect
-                    y="14.1816"
-                    width="11.8182"
-                    height="11.8182"
-                    rx="2"
-                    fill="#2F327D"
-                  ></rect>
-                  <rect
-                    x="14.7727"
-                    width="11.8182"
-                    height="11.8182"
-                    rx="2"
-                    fill="#2F327D"
-                  ></rect>
-                  <rect
-                    x="14.7727"
-                    y="14.1816"
-                    width="11.8182"
-                    height="11.8182"
-                    rx="2"
-                    fill="#F48C06"
-                  ></rect>
-                </svg>
-                <p>
-                  Teachers don’t get lost in the grid view and have a dedicated
-                  Podium space.
+        <div className="py-16 bg-white">
+          <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+            <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+              <div className="md:7/12 lg:w-6/12 text-2xl">
+                <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
+                  what is Lorem ipsum dolor sit amet consectetur ?
+                </h2>
+                <p className="mt-6 text-gray-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                  omnis voluptatem accusantium nemo perspiciatis delectus atque
+                  autem! Voluptatum tenetur beatae unde aperiam, repellat
+                  expedita consequatur! Officiis id consequatur atque
+                  doloremque!
                 </p>
-              </li>
-              <li>
-                <svg
-                  viewBox="0 0 28 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
-                >
-                  <rect
-                    x="8"
-                    y="6"
-                    width="20"
-                    height="20"
-                    rx="2"
-                    fill="#2F327D"
-                  ></rect>
-                  <rect
-                    width="21.2245"
-                    height="21.2245"
-                    rx="2"
-                    fill="#F48C06"
-                  ></rect>
-                </svg>
-                <p>
-                  TA’s and presenters can be moved to the front of the class.
+                <p className="mt-4 text-gray-600">
+                  {" "}
+                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
+                  iure expedita at? Asperiores nemo possimus nesciunt dicta
+                  veniam aspernatur quam mollitia.
                 </p>
-              </li>
-              <li>
-                <svg
-                  viewBox="0 0 30 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4"
-                >
-                  <path
-                    d="M4.5 11.375C6.15469 11.375 7.5 9.91758 7.5 8.125C7.5 6.33242 6.15469 4.875 4.5 4.875C2.84531 4.875 1.5 6.33242 1.5 8.125C1.5 9.91758 2.84531 11.375 4.5 11.375ZM25.5 11.375C27.1547 11.375 28.5 9.91758 28.5 8.125C28.5 6.33242 27.1547 4.875 25.5 4.875C23.8453 4.875 22.5 6.33242 22.5 8.125C22.5 9.91758 23.8453 11.375 25.5 11.375ZM27 13H24C23.175 13 22.4297 13.3605 21.8859 13.9445C23.775 15.0668 25.1156 17.093 25.4062 19.5H28.5C29.3297 19.5 30 18.7738 30 17.875V16.25C30 14.4574 28.6547 13 27 13ZM15 13C17.9016 13 20.25 10.4559 20.25 7.3125C20.25 4.16914 17.9016 1.625 15 1.625C12.0984 1.625 9.75 4.16914 9.75 7.3125C9.75 10.4559 12.0984 13 15 13ZM18.6 14.625H18.2109C17.2359 15.1328 16.1531 15.4375 15 15.4375C13.8469 15.4375 12.7688 15.1328 11.7891 14.625H11.4C8.41875 14.625 6 17.2453 6 20.475V21.9375C6 23.2832 7.00781 24.375 8.25 24.375H21.75C22.9922 24.375 24 23.2832 24 21.9375V20.475C24 17.2453 21.5812 14.625 18.6 14.625ZM8.11406 13.9445C7.57031 13.3605 6.825 13 6 13H3C1.34531 13 0 14.4574 0 16.25V17.875C0 18.7738 0.670312 19.5 1.5 19.5H4.58906C4.88438 17.093 6.225 15.0668 8.11406 13.9445Z"
-                    fill="#2F327D"
-                  ></path>
-                </svg>
-                <p>
-                  Teachers can easily see all students and class data at one
-                  time.
-                </p>
-              </li>
-            </ul>
+              </div>
+              <div className="md:5/12 lg:w-5/12">
+                <img
+                  src={services2}
+                  alt="image"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* <!-- tool section starts  --> */}
-      <section class="tool mt-[100px]">
-        <div class="main">
-          <div class="content">
-            <h4>
-              <span>Tools</span> For Teachers And Learners
-            </h4>
-            <p>
-              Class has a dynamic set of teaching tools built to be deployed and
-              used during class. Teachers can handout assignments in real-time
-              for students to complete and submit.
-            </p>
-          </div>
-          <div class="img">
-            <img
-              src="https://www.shutterstock.com/shutterstock/photos/2197711181/display_1500/stock-photo-education-equipment-on-the-green-background-poster-creative-hand-craft-happy-world-teachers-day-2197711181.jpg"
-              alt=""
-            />
+        <div className="py-16 bg-white">
+          <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+            <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+              <div className="md:5/12 lg:w-5/12">
+                <img
+                  src={services3}
+                  alt="image"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+              <div className="md:7/12 lg:w-6/12 text-2xl">
+                <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
+                  what is Lorem ipsum dolor ?
+                </h2>
+                <p className="mt-6 text-gray-600">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                  omnis voluptatem accusantium nemo perspiciatis delectus atque
+                  autem! Voluptatum tenetur beatae unde aperiam, repellat
+                  expedita consequatur! Officiis id consequatur atque
+                  doloremque!
+                </p>
+                <p className="mt-4 text-gray-600">
+                  {" "}
+                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
+                  iure expedita at? Asperiores nemo possimus nesciunt dicta
+                  veniam aspernatur quam mollitia.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
+      </main>
     </>
   );
 };

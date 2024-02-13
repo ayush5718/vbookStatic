@@ -1,90 +1,62 @@
-import { useState } from 'react'
+import { useState } from "react";
 // import { Link } from 'react-router-dom'
-import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import HeroSection from './Components/Home/HeroSection'
-import About from './Components/About/About'
-import Services from './Components/Services/Services'
-import Counters from './Components/Counters/Counters'
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import HeroSection from "./Components/Home/HeroSection";
+import About from "./Components/About/About";
+import Services from "./Components/Services/Services";
+import Counters from "./Components/Counters/Counters";
 
-import 'bootstrap/dist/css/bootstrap.min.css';    
+import "bootstrap/dist/css/bootstrap.min.css";
 // import Communicate from './Components/Communicate/Communicate'
-import Testinomials from './Components/Testinomials/Testinomials'
-import Sponsership from './Components/Sponsership/Sponsership'
-import OurTeam from './Components/OurTeam/OurTeam'
-import Contact from './Components/Contact/Contact'
-import Faq from './Components/Faq/Faq'
-import Footer from './Components/Footer/Footer'
-import { Outlet } from 'react-router-dom'
+import Testinomials from "./Components/Testinomials/Testinomials";
+import Sponsership from "./Components/Sponsership/Sponsership";
+import OurTeam from "./Components/OurTeam/OurTeam";
+import Contact from "./Components/Contact/Contact";
+import Faq from "./Components/Faq/Faq";
+import Footer from "./Components/Footer/Footer";
+import { Outlet } from "react-router-dom";
+// import NewPage from "./Components/Gaurav/NewPage";
 
 function App() {
-  
-
   return (
     <>
-     <>
-  {/* <meta charSet="UTF-8" />
-  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IT Company Website</title>
-  <link rel="stylesheet" href="./css/style.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-  <link rel="icon" href="./images/image.png" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-    crossOrigin="anonymous"
-  />*/}
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossOrigin="anonymous"
-  /> 
-  {/* <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />*/}
-  
+      <div className="dark">
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossOrigin="anonymous"
+        />
+        {/* <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link */}
 
- <Navbar />
-  <Outlet />
- <Footer />
- {/* <HeroSection /> */}
-  {/* <About /> */}
-  
-  
- {/* <Services /> */}
-  {/* <Counters /> */}
-  {/* <Projects /> */}
-  {/* <div className="communicate">
+        <Navbar />
+        <Outlet />
+        {/* <NewPage /> */}
+        <Footer />
+        {/* <HeroSection /> */}
+        {/* <About /> */}
+
+        {/* <Services /> */}
+        {/* <Counters /> */}
+        {/* <Projects /> */}
+        {/* <div className="communicate">
     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
     <p>Lorem ipsum dolor sit amet.</p>
     <a href="#contact">
       <button className="btn">Contact Now</button>
     </a>
   </div> */}
-  {/* <Communicate />
+        {/* <Communicate />
   <Testinomials />
   <Sponsership />
   
  
   <OurTeam />
   <Contact /> */}
-  
-  {/* <section className="faq">
+
+        {/* <section className="faq">
     <h1
       className="heading"
       style={{ marginTop: "-2rem", color: "#00bfff" }}
@@ -170,16 +142,15 @@ function App() {
       </div>
     </div>
   </section> */}
-  {/* <Faq /> */}
-  
-  {/* <a href="#" className="back-to-top">
+        {/* <Faq /> */}
+
+        {/* <a href="#" className="back-to-top">
     <i className="ion-ios-arrow-up" />
   </a> */}
-</>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
-
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

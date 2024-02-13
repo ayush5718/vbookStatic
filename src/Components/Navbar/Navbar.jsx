@@ -1,63 +1,100 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { IoClose, IoMenu } from "react-icons/io5";
 import About from "../About/About";
-import "./Navbar.css";
 import logo from "/src/assets/images/logo.png";
+import "./Navbar.css";
+
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 0;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]);
+  const closeMenuOnMobile = () => {
+    if (window.innerWidth <= 1150) {
+      setShowMenu(false);
+    }
+  };
   return (
-    <>
-      <header className={`header ${scrolled ? "scrolled" : ""}`}>
-        <a href="#" className="logo">
-          <img src={logo} alt="" />
-        </a>
-        <div className="fas fa-bars" />
-        <nav className="navbar">
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
+    <header className="header">
+      <nav className="nav container">
+        <img src={logo} className="w-[150px]" alt="" />
+
+        <div
+          className={`nav__menu ${showMenu ? "show-menu" : ""} text-white`}
+          id="nav-menu"
+        >
+          <ul className="nav__list text-white text-3xl">
+            <li className="nav__item">
+              <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
+                Home
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
+            <li className="nav__item">
+              <NavLink
+                to="/about"
+                className="nav__link"
+                onClick={closeMenuOnMobile}
+              >
+                About Us
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/contact">Contact Us</NavLink>
+            <li className="nav__item">
+              <NavLink
+                to="/ourteams"
+                className="nav__link"
+                onClick={closeMenuOnMobile}
+              >
+                Our Teams
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/ourteams">Our Teams</NavLink>
+            <li className="nav__item">
+              <NavLink
+                to="/contact"
+                className="nav__link"
+                onClick={closeMenuOnMobile}
+              >
+                Contact Us
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/teacher">Become a Tutor</NavLink>
+            <li className="nav__item">
+              <NavLink
+                to="/teacher"
+                className="nav__link"
+                onClick={closeMenuOnMobile}
+              >
+                Become A Tutor
+              </NavLink>
             </li>
-            {/* <li>
-        <NavLink to="/">Home</NavLink>
-        </li> */}
-            <li>
-              <NavLink to="/registeration">
-                {" "}
-                <button className="buttons">Student Pre Registeration</button>
+            <li className="nav__item">
+              <NavLink
+                to="/registeration"
+                className="nav__link nav__cta button"
+              >
+                Student Pre Registeration
               </NavLink>
             </li>
           </ul>
-        </nav>
-      </header>
-    </>
+          <div
+            className="nav__close text-white mr-4 text-8xl"
+            id="nav-close"
+            onClick={toggleMenu}
+          >
+            <IoClose />
+          </div>
+        </div>
+
+        <div
+          className="nav__toggle text-white mr-8 text-8xl"
+          id="nav-toggle"
+          onClick={toggleMenu}
+        >
+          <IoMenu />
+        </div>
+      </nav>
+    </header>
   );
 };
 
