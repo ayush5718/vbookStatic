@@ -1,8 +1,8 @@
 import React from "react";
 import "./Services.css";
 import services1 from "/src/assets/images/whatisVbook.gif";
-import services2 from "/src/assets/images/whatisVbook2.gif";
-import services3 from "/src/assets/images/whatisVbook3.gif";
+import services2 from "/src/assets/images/whatisvbook2.png";
+import services3 from "/src/assets/images/whatisvbook4.gif";
 
 const Services = () => {
   return (
@@ -148,7 +148,7 @@ const Services = () => {
               </div>
               <div className="md:5/12 lg:w-5/12">
                 <img
-                  src={services2}
+                  src={services3}
                   alt="image"
                   loading="lazy"
                   width=""
@@ -159,12 +159,18 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="py-16 bg-white">
+        <div className="py-16 bg-white border-t-2">
+          <h1 className="md:text-8xl mb-8 text-center font-bold text-3xl text-gray-800">
+            Why{" "}
+            <span className="md:border-b-8 border-b-2 border-blue-300">
+              V-BOOK
+            </span>
+          </h1>
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12">
                 <img
-                  src={services3}
+                  src={services2}
                   alt="image"
                   loading="lazy"
                   width=""
@@ -173,7 +179,7 @@ const Services = () => {
               </div>
               <div className="md:7/12 lg:w-6/12 text-2xl">
                 <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
-                  what is Lorem ipsum dolor ?
+                  what is Lorem ipsum dolor ayush ?
                 </h2>
                 <p className="mt-6 text-gray-600">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum

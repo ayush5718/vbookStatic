@@ -1,7 +1,7 @@
 .home {
   min-height: 50vh;
   width: 100vw;
-  background-image: url("https://img.freepik.com/premium-photo/blank-yellow-sticky-note-pencil-navy-blue-table-background_7189-3543.jpg?w=1060");
+  background-image: url("C:/Users/ASUS/Desktop/Vbook/static website/vbookStatic/src/assets/images/ourteams.png");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -14,13 +14,13 @@
 }
 
 .home h1 {
-  color: #e29415;
+  /* color: #002fff; */
   font-weight: 800;
   font-size: 5.5rem;
 }
 
 .home h2 {
-  color: #fff;
+  color: #02010f;
   font-size: 3rem;
 }
 

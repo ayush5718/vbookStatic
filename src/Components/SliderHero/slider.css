@@ -1,12 +1,18 @@
 .slider-content {
-  background: url("https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149177092.jpg?w=1060&t=st=1707736300~exp=1707736900~hmac=2d9ce935ce55ef50eddba697f834dc619a418fdec1deac6971615a80fb665efa");
+  background: url("C:/Users/ASUS/Desktop/Vbook/static website/vbookStatic/src/assets/images/slider1.png");
   background-position: center;
   background-size: cover;
+  background-origin: content-box;
+  /* background-clip: padding-box; */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
   width: 100vw;
   height: 100vh;
 }
 .slider-content-2 {
-  background: url("https://img.freepik.com/free-vector/3d-black-spheres-space-background_87202-1121.jpg?w=1060&t=st=1707739543~exp=1707740143~hmac=ab3c6878a7780e6bada16b7138432efa5b6b748611b791d86b13fb7ae8aa28a8");
+  background: url("C:/Users/ASUS/Desktop/Vbook/static website/vbookStatic/src/assets/images/slider2.png");
   background-position: center;
   background-size: cover;
   width: 100vw;
@@ -19,4 +25,7 @@
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+.carousel-indicators {
+  opacity: 0;
 }

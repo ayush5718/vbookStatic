@@ -100,7 +100,7 @@
 .testimonial-section {
   /* background: url(https://cdn2.hubspot.net/hubfs/346178/Assets-Dec16/testimonial-bg.png)
     no-repeat; */
-  background-color: #01adef;
+  /* background-color: #01adef; */
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  color: #ffffff;
+  color: #161515;
   font-family: Gibson;
   font-size: 14px;
   font-weight: 300;
@@ -140,10 +140,10 @@
   text-align: center;
 }
 .testimonial p {
-  max-width: 770px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
-  color: #eceef4;
+  color: #171718;
   font-family: Gibson;
   font-size: 24px;
   font-style: italic;

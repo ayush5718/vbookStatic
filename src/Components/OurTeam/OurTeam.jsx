@@ -1,11 +1,6 @@
 import React from "react";
 import "./ourteam.css";
-import vaibhav from "/src/assets/images/vaibhav.png";
-import shubhashish from "/src/assets/images/shubhashish.png";
-import bhavesh from "/src/assets/images/bhavesh.png";
-import nilanjan from "/src/assets/images/nilanjan.png";
-import nawlesh from "/src/assets/images/nawlesh.png";
-import aayush from "/src/assets/images/aayush.png";
+
 const OurTeam = () => {
   return (
     <>
@@ -151,10 +146,10 @@ const OurTeam = () => {
           href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
         />
         <section id="home" class="home">
-          <h1>
+          <h1 className="text-blue-800">
             {" "}
             <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
-              Me<span className="text-white lowercase">et</span>{" "}
+              Me<span className="text-blue-800 lowercase">et</span>{" "}
             </span>{" "}
             Our V-book Team
           </h1>

@@ -3,8 +3,8 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <section id="home" class="teacher-home inset-4">
-        <h1> Contact Us</h1>
+      <section id="home" class="contact-home">
+        <h1 className="text-8xl text-white font-bold"> Contact Us</h1>
       </section>
       <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
         <div className="container">
@@ -82,7 +82,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-3xl text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      (+91) 80905 78488
                     </p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-3xl text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      vbook8090@gmail.com
                     </p>
                   </div>
                 </div>

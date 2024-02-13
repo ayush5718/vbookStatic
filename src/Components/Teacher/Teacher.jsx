@@ -18,7 +18,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import teacher1 from "/src/assets/images/teacher4.gif";
 import teacher2 from "/src/assets/images/teacher2.gif";
 import teacher3 from "/src/assets/images/teacher3.gif";
-import teacher4 from "/src/assets/images/teacher1.png";
+import teacher4 from "/src/assets/images/whatisVbook2.gif";
+import { NavLink } from "react-router-dom";
 // importing images
 import bb from "./images/bb.png";
 import inspire from "./images/inspire.png";
@@ -111,7 +112,7 @@ const Teacher = () => {
     <Fragment>
       {/* get started section starts */}
 
-      <section id="home" class="teacher-home inset-4">
+      <section id="home" class="teacher-home">
         <h1>
           {" "}
           <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text mt-4">
@@ -120,7 +121,7 @@ const Teacher = () => {
           A Tutor
         </h1>
         <button className=" btn btn-warning px-8 py-4 text-2xl mt-5">
-          Get Started
+          <NavLink to="/teacherRegisteration">Get Started</NavLink>
         </button>
       </section>
 
@@ -175,14 +176,12 @@ const Teacher = () => {
       <MulitpleFeatureSection />
       {/* <NewPage /> */}
 
-      <section class="testimonial-section mb-8">
+      <section class="testimonial-section m-[30px] border-b-2 border-t-2 p-5">
         <div class="testimonials sm:w-[300px] lg:w-[1100px]">
           <Slider {...settings}>
             <div class="testimonial">
               <p>
-                “InboundLabs helped me to find the weak points of our web
-                presence. It is important to get an external view of your
-                strategy and they have helped us so much in this point. They
+                “ strategy and they have helped us so much in this point. They
                 have been very professional and honest with their proposals.
                 Highly recommended.”
               </p>
@@ -195,9 +194,7 @@ const Teacher = () => {
 
             <div class="testimonial">
               <p>
-                “InboundLabs helped me to find the weak points of our web
-                presence. It is important to get an external view of your
-                strategy and they have helped us so much in this point. They
+                “ strategy and they have helped us so much in this point. They
                 have been very professional and honest with their proposals.
                 Highly recommended.”
               </p>
@@ -208,6 +205,25 @@ const Teacher = () => {
               </div>
             </div>
           </Slider>
+        </div>
+      </section>
+
+      <section class="bg-gray-200 mb-8 h-[40vh] flex justify-center items-center">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-20 lg:px-6">
+          <div class="max-w-screen-sm mx-auto text-center ">
+            <h2 class="mb-4 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-black text-4xl">
+              Become an instructor today
+            </h2>
+            <p class="mb-[50px] font-light text-black dark:text-gray-400 text-4xl">
+              Join one of the world’s largest online learning marketplaces.
+            </p>
+            <a
+              href="#"
+              class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-2xl px-8 py-4  mr-8 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+            >
+              <NavLink to="/teacherRegisteration">GET STARTED</NavLink>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -223,7 +239,7 @@ const MulitpleFeatureSection = () => {
 
   return (
     <>
-      <h1 className="flex justify-center text-8xl mb-5">
+      <h1 className="flex justify-center text-8xl mb-5 text-center">
         How to Become a Tutor
       </h1>
       <div className=" p-4 space-x-4 flex justify-center ">
@@ -285,7 +301,7 @@ const MulitpleFeatureSection = () => {
       {featureOpen === 3 && (
         <FeatureSection
           text={"the third step"}
-          image={teacher3}
+          image={teacher4}
           desc={
             "dney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.3The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicer"
           }
@@ -310,7 +326,7 @@ const MulitpleFeatureSection = () => {
   );
 };
 
-const TabBtn = ({ text, featureOpen, activeNumber, setFeatureOpen, text2 }) => {
+const TabBtn = ({ text, featureOpen, activeNumber, setFeatureOpen }) => {
   return (
     <li>
       <button
@@ -344,10 +360,10 @@ export function FeatureSection({ text, image, desc, desc2 }) {
                   Digital Agency
                 </span> */}
               </h1>
-              <p className="mt-10 text-black dark:text-gray-300 lg:text-lg max-w-2xl lg:max-w-none mx-auto text-left	">
+              <p className="mt-10 text-black dark:text-gray-300 lg:text-2xl max-w-2xl lg:max-w-none mx-auto text-left ">
                 {desc}
               </p>
-              <p className="mt-10 text-black dark:text-gray-300 lg:text-lg max-w-2xl lg:max-w-none mx-auto text-left">
+              <p className="mt-10 text-black dark:text-gray-300 lg:text-2xl max-w-2xl lg:max-w-none mx-auto text-left">
                 {desc2}
               </p>
               {/* <div className="mt-10 flex gap-4 justify-center lg:justify-start flex-wrap">

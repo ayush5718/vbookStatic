@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+nav ul li {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
 /* .header {
   display: flex;
   align-items: center;
@@ -196,8 +202,8 @@ header .buttons {
     background-color: hsla(0, 2%, 8%, 0.911);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    width: 80%;
-    height: 100%;
+    width: 60%;
+    height: 38%;
     padding: 6rem 3rem 0;
     transition: right 0.4s;
   }

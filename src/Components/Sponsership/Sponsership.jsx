@@ -1,10 +1,11 @@
 import React from "react";
 import "./sponsership.css";
-import company1 from "/src/assets/images/company1.png";
-import company2 from "/src/assets/images/company2.png";
-import company3 from "/src/assets/images/company3.png";
-import company4 from "/src/assets/images/company4.png";
-import company5 from "/src/assets/images/ureckon.png";
+import company1 from "/src/assets/images/ureckon.png";
+import company2 from "/src/assets/images/cell.png";
+import company3 from "/src/assets/images/iem.png";
+import company4 from "/src/assets/images/acm.png";
+import company5 from "/src/assets/images/uniclass.png";
+// import company5 from "/src/assets/images/ureckon.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,7 +74,7 @@ const Sponsership = () => {
       <div className="clients mt-100">
         <div className="container b">
           <div className="section-header">
-            <h2>Promotions</h2>
+            <h2>Partners</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
           </div>
           <Slider {...settings} className="bg-white">

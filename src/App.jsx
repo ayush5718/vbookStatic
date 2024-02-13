@@ -5,7 +5,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import HeroSection from "./Components/Home/HeroSection";
 import About from "./Components/About/About";
 import Services from "./Components/Services/Services";
-import Counters from "./Components/Counters/Counters";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Communicate from './Components/Communicate/Communicate'

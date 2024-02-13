@@ -18,7 +18,7 @@ const Navbar = () => {
     }
   };
   return (
-    <header className="header">
+    <header className="header md:top-0 top-[-38px]">
       <nav className="nav container">
         <img src={logo} className="w-[150px]" alt="" />
 
@@ -26,7 +26,7 @@ const Navbar = () => {
           className={`nav__menu ${showMenu ? "show-menu" : ""} text-white`}
           id="nav-menu"
         >
-          <ul className="nav__list text-white text-3xl">
+          <ul className="nav__list text-white lg:text-4xl text-4xl lg:flex lg:items-center">
             <li className="nav__item">
               <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
                 Home
