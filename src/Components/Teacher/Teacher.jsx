@@ -33,33 +33,33 @@ import "./Teacher.css";
 
 const Teacher = () => {
   // const [showModal, setShowModal] = useState(false);
-  const data = [
-    {
-      name: `John Morgan`,
-      img: testimonial1,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    },
-    {
-      name: `Ellie Anderson`,
-      img: testimonial2,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    },
-    {
-      name: `Nia Adebayo`,
-      img: testimonial3,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    },
-    {
-      name: `Rigo Louie`,
-      img: testimonial4,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    },
-    {
-      name: `Mia Williams`,
-      img: testimonial5,
-      review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-    },
-  ];
+  // const data = [
+  //   {
+  //     name: `John Morgan`,
+  //     // img: testimonial1,
+  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  //   },
+  //   {
+  //     name: `Ellie Anderson`,
+  //     // img: testimonial2,
+  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  //   },
+  //   {
+  //     name: `Nia Adebayo`,
+  //     img: testimonial3,
+  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  //   },
+  //   {
+  //     name: `Rigo Louie`,
+  //     img: testimonial4,
+  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  //   },
+  //   {
+  //     name: `Mia Williams`,
+  //     img: testimonial5,
+  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+  //   },
+  // ];
   const settings = {
     dots: true,
     infinite: true,
