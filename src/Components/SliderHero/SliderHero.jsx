@@ -1,5 +1,7 @@
-import { Navbar } from "react-bootstrap";
+// import { Navbar } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
+
 // import Image1 from "/src/Components/ExampleCarouselImage/image1.jpg";
 import "./slider.css";
 import slider1 from "/src/assets/images/slider1.png";
@@ -11,7 +13,7 @@ function SliderHero() {
           <div className="md:h-[100vh] h-[45vh] flex justify-center items-center">
             <h1 className="text-white md:text-7xl text-2xl w-100 text-center font-bold leading-tight	">
               <button className="button md:text-7xl text-2xl md:w-[400px] w-[150px] md:hidden">
-                Pre Register
+                <NavLink to="/registeration">Pre Register</NavLink>
               </button>
             </h1>
           </div>
@@ -26,7 +28,7 @@ function SliderHero() {
           <div className="md:h-[100vh] h-[45vh] flex justify-center items-center">
             <h1 className="text-white md:text-7xl text-2xl w-50 text-center font-bold leading-tight	">
               <button className="button md:text-7xl text-2xl md:w-[400px] w-[150px] m-4 md:hidden">
-                Pre Register
+                <NavLink to="/registeration">Pre Register</NavLink>
               </button>
             </h1>
           </div>
@@ -41,7 +43,7 @@ function SliderHero() {
           <div className="md:h-[100vh] h-[45vh] flex justify-center items-center">
             <h1 className="text-white md:text-7xl text-2xl w-50 text-center font-bold leading-tight	">
               <button className="button md:text-7xl text-2xl md:w-[400px] w-[150px] m-4 md:hidden">
-                Pre Register
+                <NavLink to="/registeration">Pre Register</NavLink>
               </button>
             </h1>
           </div>

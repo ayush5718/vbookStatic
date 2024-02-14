@@ -1,7 +1,7 @@
 import React from "react";
 import "./Services.css";
 import services1 from "/src/assets/images/whatisVbook.gif";
-import services2 from "/src/assets/images/whatisvbook2.png";
+import services2 from "/src/assets/images/services3.gif";
 import services3 from "/src/assets/images/whatisvbook4.gif";
 
 const Services = () => {
@@ -108,17 +108,18 @@ const Services = () => {
                   what is V-book?
                 </h2>
                 <p className="mt-6 text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  omnis voluptatem accusantium nemo perspiciatis delectus atque
-                  autem! Voluptatum tenetur beatae unde aperiam, repellat
-                  expedita consequatur! Officiis id consequatur atque
-                  doloremque!
+                  We are exploring books from various decades, witnessing
+                  significant transformations. However, despite these changes,
+                  the real problems faced by students in understanding books
+                  remain unaddressed. Often, books are perceived as boring and
+                  difficult to comprehend without teacher assistance.
                 </p>
                 <p className="mt-4 text-gray-600">
                   {" "}
-                  Nobis minus voluptatibus pariatur dignissimos libero quaerat
-                  iure expedita at? Asperiores nemo possimus nesciunt dicta
-                  veniam aspernatur quam mollitia.
+                  Introducing V-Books, the solution to all student learning
+                  woes. We're revolutionizing books with an advanced version
+                  that eliminates the need for additional assistance. V-Books
+                  combine textbook content, audiobook.
                 </p>
               </div>
             </div>
@@ -130,16 +131,17 @@ const Services = () => {
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:7/12 lg:w-6/12 text-2xl">
                 <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
-                  what is Lorem ipsum dolor sit amet consectetur ?
+                  A platform for anyone to become a tutor
                 </h2>
                 <p className="mt-6 text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  omnis voluptatem accusantium nemo perspiciatis delectus atque
-                  autem! Voluptatum tenetur beatae unde aperiam, repellat
-                  expedita consequatur! Officiis id consequatur atque
-                  doloremque!
+                  V-Book is also a platform for anyone who wants to teach
+                  students but lacks resources. In V-Book, anyone can become a
+                  tutor or author, regardless of degrees or higher
+                  qualifications. All you need is a good knowledge in any domain
+                  and a passion for teaching. You are welcome to join our
+                  platform as a tutor.
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600 hidden">
                   {" "}
                   Nobis minus voluptatibus pariatur dignissimos libero quaerat
                   iure expedita at? Asperiores nemo possimus nesciunt dicta
@@ -160,7 +162,7 @@ const Services = () => {
         </div>
 
         <div className="py-16 bg-white border-t-2">
-          <h1 className="md:text-8xl mb-8 text-center font-bold text-3xl text-gray-800">
+          <h1 className="md:text-8xl mb-8 text-center font-bold text-3xl text-gray-800 hidden">
             Why{" "}
             <span className="md:border-b-8 border-b-2 border-blue-300">
               V-BOOK
@@ -179,16 +181,18 @@ const Services = () => {
               </div>
               <div className="md:7/12 lg:w-6/12 text-2xl">
                 <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
-                  what is Lorem ipsum dolor ayush ?
+                  what V-book ?
                 </h2>
                 <p className="mt-6 text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  omnis voluptatem accusantium nemo perspiciatis delectus atque
-                  autem! Voluptatum tenetur beatae unde aperiam, repellat
-                  expedita consequatur! Officiis id consequatur atque
-                  doloremque!
+                  V-BOOK is the world's first book that can speak and provide
+                  visualizations of each concept. Previously, there were only
+                  textbooks available for academic learning. The audio books,
+                  which were also available, were not focused on academic
+                  learning; they were simply storytelling books. However, for
+                  the first time, there is a book that contains everything a
+                  student needs for learning at a minimal price.
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600 hidden">
                   {" "}
                   Nobis minus voluptatibus pariatur dignissimos libero quaerat
                   iure expedita at? Asperiores nemo possimus nesciunt dicta

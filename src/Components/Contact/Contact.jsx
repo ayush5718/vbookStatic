@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./contact.css";
 const Contact = () => {
   return (
@@ -18,9 +19,10 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-3xl leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  You may contact us via our email address, or you can SMS us at
+                  the provided phone number for any queries. Your suggestions
+                  and queries are always valuable to us as they provide us with
+                  opportunities for improvement.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   {/* <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">

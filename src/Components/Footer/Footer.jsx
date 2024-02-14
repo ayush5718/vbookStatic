@@ -1,15 +1,45 @@
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
-import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
+import { FaInstagram, FaLinkedin, FaWhatsapp, FaYoutube } from "react-icons/fa";
+
 import { BiLogoPinterestAlt } from "react-icons/bi";
 import logo from "/src/assets/images/logo.png";
 import { NavLink } from "react-router-dom";
 
 function Footer() {
   const iconsTab = [
-    { icon: <FaFacebookF /> },
-    { icon: <AiOutlineTwitter /> },
-    { icon: <AiFillYoutube /> },
-    { icon: <FaInstagram /> },
+    {
+      icon: (
+        <a href="https://www.linkedin.com/company/v-books/" target="_blank">
+          <FaLinkedin />
+        </a>
+      ),
+    },
+    {
+      icon: (
+        <a
+          href="https://whatsapp.com/channel/0029VaP99aI9mrGevvFAxh0T"
+          target="_blank"
+        >
+          <FaWhatsapp />
+        </a>
+      ),
+    },
+    {
+      icon: (
+        <a
+          href="https://youtube.com/@v_books?si=dXV3UjkhRFt65u8h"
+          target="_blank"
+        >
+          <FaYoutube />
+        </a>
+      ),
+    },
+    {
+      icon: (
+        <a href="https://www.instagram.com/v_book_offical/" target="_blank">
+          <FaInstagram />
+        </a>
+      ),
+    },
   ];
   return (
     <>

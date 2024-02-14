@@ -10,14 +10,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Services from "../Services/Services";
 import Testinomials from "../Testinomials/Testinomials";
 import Sponsership from "../Sponsership/Sponsership";
-import OurTeam from "../OurTeam/OurTeam";
-import girl from "/src/assets/images/girl.png";
-import Faq from "../Faq/Faq";
+
 import icon1 from "/src/assets/images/icon3.png";
 import icon2 from "/src/assets/images/icon4.png";
 import icon3 from "/src/assets/images/icon5.png";
-import icon4 from "/src/assets/images/icon6.png";
-import iconButton from "/src/assets/images/icon7.png";
+import icon4 from "/src/assets/images/vbookwhite.png";
+// import iconButton from "/src/assets/images/icon7.png";
 import SliderHero from "../SliderHero/SliderHero";
 import becomeatutor from "/src/assets/images/becomeAtutor.png";
 // const flickityOptions = {
@@ -65,7 +63,7 @@ const HeroSection = () => {
               style={{
                 padding: 10,
                 width: "30%",
-                height: 312,
+                height: "60%",
                 color: "#000",
                 backgroundColor: "#e9aa1b",
                 display: "flex",
@@ -94,8 +92,8 @@ const HeroSection = () => {
                   width={70}
                   className="w-[20rem]"
                 />
-                <p className="text-4xl" style={{ margin: 5 }}>
-                  Starter
+                <p className="text-4xl text-center" style={{ margin: 5 }}>
+                  Text Explanation
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -110,9 +108,12 @@ const HeroSection = () => {
                   alignItems: "center",
                 }}
               >
-                <p id="box1" className="text-center text-2xl font-bold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, iure.
+                <p id="box1" className="text-center lg:text-2xl  p-6">
+                  The language used in our book is not overly complex; instead,
+                  it adopts a simple and straightforward tone reminiscent of
+                  handmade notes. This approach aims to make the content easily
+                  understandable, thus aiding students in grasping concepts more
+                  effectively
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -125,7 +126,7 @@ const HeroSection = () => {
                 padding: 10,
                 width: "30%",
                 color: "#505050",
-                height: 312,
+                height: "60%",
                 backgroundColor: "#2cb04a",
                 display: "flex",
                 justifyContent: "center",
@@ -153,8 +154,8 @@ const HeroSection = () => {
                   width={70}
                   className="w-[20rem]"
                 />
-                <p className="text-4xl" style={{ margin: 5 }}>
-                  Booster
+                <p className="text-4xl text-center" style={{ margin: 5 }}>
+                  Audio Explanation
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -169,12 +170,11 @@ const HeroSection = () => {
                   alignItems: "center",
                 }}
               >
-                <p
-                  id="box1"
-                  className="text-center text-2xl font-bold text-white"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, iure.
+                <p id="box1" className="text-center text-2xl  text-white p-4">
+                  The audio explanation will serve as an additional booster and
+                  aid in clearing doubts. If any student has questions after
+                  reading the text explanation, the tutor's audio explanation
+                  will effectively address all concerns.
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -187,7 +187,7 @@ const HeroSection = () => {
                 padding: 10,
                 width: "30%",
                 color: "#505050",
-                height: 312,
+                height: "60%",
                 backgroundColor: "#6454a4",
                 display: "flex",
                 justifyContent: "center",
@@ -217,7 +217,7 @@ const HeroSection = () => {
                   className="w-[20rem]"
                 />
                 <p className="text-4xl" style={{ margin: 5 }}>
-                  Turbo
+                  Video Explanation
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -230,9 +230,11 @@ const HeroSection = () => {
                   alignItems: "center",
                 }}
               >
-                <p id="box1" className="text-center text-2xl  font-bold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, iure.
+                <p id="box1" className="text-center text-2xl   p-4">
+                  If any student still has doubts after the text and audio
+                  explanations, there will be a video explanation of each topic
+                  in Hinglish, which will clear up any remaining uncertainties
+                  and ensure a thorough understanding of the concepts.
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -245,7 +247,7 @@ const HeroSection = () => {
                 padding: 10,
                 width: "30%",
                 color: "#505050",
-                height: 312,
+                height: "60%",
                 backgroundColor: "#f05940",
                 display: "flex",
                 justifyContent: "center",
@@ -274,7 +276,7 @@ const HeroSection = () => {
                   className="w-[20rem]"
                 />
                 <p className="text-4xl" style={{ margin: 4 }}>
-                  A-la-carte
+                  The Ultimate V-book
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -286,12 +288,14 @@ const HeroSection = () => {
                   alignItems: "center",
                 }}
               >
-                <p
-                  id="box1"
-                  className="text-center text-2xl font-bold text-white"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatibus, iure.
+                <p id="box1" className="text-center text-2xl text-white">
+                  These three phases of learning will crystal clear the concepts
+                  for students, taking their understanding to the next level. In
+                  addition, V-Book also focuses on offering quality content at a
+                  minimal price. Therefore, we have structured this book by
+                  chapter rather than as a comprehensive course book. This
+                  approach minimizes costs, providing students with a wide range
+                  of learning options.
                 </p>
               </div>
               <hr style={{ color: "white", width: "100%" }} />
@@ -318,14 +322,15 @@ const HeroSection = () => {
               </div>
               <div className="md:7/12 lg:w-4/12 text-2xl ml-4 mt-20]">
                 <h2 className="text-6xl text-gray-700 font-bold md:text-7xl mt-20">
-                  Become an Author
+                  Become a Tutor
                 </h2>
                 <p className="mt-6 text-3xl text-gray-500">
-                  Instructors from around the world teach millions of learners
-                  on Udemy. We provide the tools and skills to teach what you
-                  love.
+                  Creating your own book is a dream of every teacher. It's time
+                  to create a book that reflects your words, your voice, and
+                  your unique teaching style with the help of V-Book tools and
+                  your teaching skills.
                 </p>
-                <button className="btn btn-dark mt-4 py-4 md:text-2xl text-3xl text-white">
+                <button className="bg-[#01adef] mt-4 px-7 py-7 md:text-3xl text-3xl text-white font-bold rounded">
                   <NavLink to="/teacher">create your 1st book</NavLink>
                 </button>
               </div>

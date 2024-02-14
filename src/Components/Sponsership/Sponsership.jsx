@@ -75,7 +75,7 @@ const Sponsership = () => {
         <div className="container b">
           <div className="section-header">
             <h2>Partners</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+            <p>Here are our partners</p>
           </div>
           <Slider {...settings} className="bg-white">
             {data.map((item) => (

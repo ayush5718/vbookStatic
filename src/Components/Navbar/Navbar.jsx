@@ -18,15 +18,16 @@ const Navbar = () => {
     }
   };
   return (
-    <header className="header md:top-0 top-[-38px]">
+    <header className="header md:top-0 top-[-45px]">
       <nav className="nav container">
-        <img src={logo} className="w-[150px]" alt="" />
-
+        <div className="lg:mb-[20px] lg:absolute">
+          <img src={logo} className="lg:w-[250px] w-[150px]" alt="" />
+        </div>
         <div
           className={`nav__menu ${showMenu ? "show-menu" : ""} text-white`}
           id="nav-menu"
         >
-          <ul className="nav__list text-white lg:text-4xl text-4xl lg:flex lg:items-center">
+          <ul className="nav__list text-white lg:text-4xl text-4xl lg:flex lg:items-center lg:mb-24 lg:ml-[425px] lg:mt-[20px]">
             <li className="nav__item">
               <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
                 Home

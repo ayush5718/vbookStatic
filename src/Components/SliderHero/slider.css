@@ -1,5 +1,5 @@
 .slider-content {
-  background: url("https://i.ibb.co/BGgHRbK/slider1.png");
+  background: url("C:/Users/ASUS/Desktop/Vbook/static website/vbookStatic/src/assets/images/slider1.png");
   background-position: center;
   background-size: cover;
   background-origin: content-box;
@@ -12,7 +12,7 @@
   height: 100vh;
 }
 .slider-content-2 {
-  background: url("https://i.ibb.co/8XV7vm4/slider2.png");
+  background: url("C:/Users/ASUS/Desktop/Vbook/static website/vbookStatic/src/assets/images/slider2.png");
   background-position: center;
   background-size: cover;
   width: 100vw;

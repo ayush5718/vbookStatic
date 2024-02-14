@@ -114,12 +114,7 @@ const TeacherRegister = () => {
           value={formData.cPassword}
           onChange={handleFormData}
         />
-        <div className="remebermeAndForgetPassword">
-          <span className="rememberMe">
-            Remember me <input type="checkbox" />
-          </span>
-          <span className="forgetPassword">Forget Password?</span>
-        </div>
+
         <button className="registerButton">Register as a Teacher</button>
         <div className="register_form_divider">
           <hr />

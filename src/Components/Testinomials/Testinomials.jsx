@@ -1,18 +1,14 @@
 import React from "react";
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import testimonial1 from "/src/assets/images/testimonial-1.jpg";
-import testimonial2 from "/src/assets/images/testimonial-2.jpg";
-import testimonial3 from "/src/assets/images/testimonial-3.jpg";
-import testimonial4 from "/src/assets/images/testimonial-4.jpg";
-import testimonial5 from "/src/assets/images/testimonial-5.jpg";
+
 import "./testinomials.css";
 
 function Testinomials() {
   return (
     <>
-      <section class="bg-white">
+      <section class="bg-white lg:mt-[200px] mt-[300px]">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
           <div class="mx-auto max-w-screen-sm border-b-2 border-black">
             <h2 class="mb-4 text-4xl lg:text-6xl tracking-tight font-extrabold text-gray-900 ">

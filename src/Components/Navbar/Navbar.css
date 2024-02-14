@@ -108,31 +108,31 @@ header .buttons {
 
 @-o-keyframes glowing {
   0% {
-    background-color: #b20000;
-    box-shadow: 0 0 3px #b20000;
+    background-color: #01adef;
+    box-shadow: 0 0 2px #01adef;
   }
   50% {
-    background-color: #ff0000;
-    box-shadow: 0 0 40px #ff0000;
+    background-color: #01adef;
+    box-shadow: 0 0 5px #01adef;
   }
   100% {
-    background-color: #b20000;
-    box-shadow: 0 0 3px #b20000;
+    background-color: #01adef;
+    box-shadow: 0 0 3px #01adef;
   }
 }
 
 @keyframes glowing {
   0% {
-    background-color: #b20000;
-    box-shadow: 0 0 3px #b20000;
+    background-color: #01adef;
+    box-shadow: 0 0 3px #01adef;
   }
   50% {
-    background-color: #ff0000;
-    box-shadow: 0 0 40px #ff0000;
+    background-color: #01adef;
+    box-shadow: 0 0 10px #01adef;
   }
   100% {
-    background-color: #b20000;
-    box-shadow: 0 0 3px #b20000;
+    background-color: #01adef;
+    box-shadow: 0 0 3px #01adef;
   }
 }
 /*
@@ -203,7 +203,7 @@ header .buttons {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     width: 60%;
-    height: 38%;
+    height: 50%;
     padding: 6rem 3rem 0;
     transition: right 0.4s;
   }

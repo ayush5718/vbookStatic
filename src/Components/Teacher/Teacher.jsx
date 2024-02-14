@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import testimonial1 from "/src/assets/images/testimonial-1.jpg";
-import testimonial2 from "/src/assets/images/testimonial-2.jpg";
-import testimonial3 from "/src/assets/images/testimonial-3.jpg";
-import testimonial4 from "/src/assets/images/testimonial-4.jpg";
-import testimonial5 from "/src/assets/images/testimonial-5.jpg";
+// import testimonial1 from "/src/assets/images/testimonial-1.jpg";
+// import testimonial2 from "/src/assets/images/testimonial-2.jpg";
+// import testimonial3 from "/src/assets/images/testimonial-3.jpg";
+// import testimonial4 from "/src/assets/images/testimonial-4.jpg";
+// import testimonial5 from "/src/assets/images/testimonial-5.jpg";
 import "swiper/css";
 import "swiper/css/effect-creative";
 
@@ -26,8 +26,7 @@ import inspire from "./images/inspire.png";
 import trophy from "./images/trophy.png";
 
 // import getstarted1 from "/src/assets/images/planyourbook.png";
-import tutor2 from "/src/assets/images/tutor-2.png";
-import tutor3 from "/src/assets/images/tutor-3.png";
+
 import "./Teacher.css";
 // import NewPage from "../Gaurav/NewPage";
 // import Footer from '../Footer/Footer';
@@ -112,15 +111,9 @@ const Teacher = () => {
     <Fragment>
       {/* get started section starts */}
 
-      <section id="home" class="teacher-home">
-        <h1>
-          {" "}
-          <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text mt-4">
-            Become<span className="text-white lowercase"></span>{" "}
-          </span>{" "}
-          A Tutor
-        </h1>
-        <button className=" btn btn-warning px-8 py-4 text-2xl mt-5">
+      <section id="home" class="teacher-home ">
+        <h1 className="text-white lg"> Become a Tutor</h1>
+        <button className=" px-10 py-8 text-2xl mt-5 bg-[#01adef] rounded text-white font-bold">
           <NavLink to="/teacherRegisteration">Get Started</NavLink>
         </button>
       </section>
@@ -176,7 +169,7 @@ const Teacher = () => {
       <MulitpleFeatureSection />
       {/* <NewPage /> */}
 
-      <section class="testimonial-section m-[30px] border-b-2 border-t-2 p-5">
+      <section class="testimonial-section m-[50px] border-b-2 border-t-2 p-5">
         <div class="testimonials sm:w-[300px] lg:w-[1100px]">
           <Slider {...settings}>
             <div class="testimonial">
@@ -212,14 +205,14 @@ const Teacher = () => {
         <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-20 lg:px-6">
           <div class="max-w-screen-sm mx-auto text-center ">
             <h2 class="mb-4 font-extrabold leading-tight tracking-tight text-gray-900 dark:text-black text-4xl">
-              Become an instructor today
+              Become a Tutor
             </h2>
             <p class="mb-[50px] font-light text-black dark:text-gray-400 text-4xl">
-              Join one of the world’s largest online learning marketplaces.
+              Become the tutor of world first complete book.
             </p>
             <a
               href="#"
-              class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-2xl px-8 py-4  mr-8 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
+              class="text-white bg-[#01adef] hover:bg-[#01adef] focus:ring-4 focus:ring-[#01adef] font-bold rounded-lg text-2xl px-10 py-8  mr-8 bg-[#01adef] dark:hover:bg-[#01adef] focus:outline-none text-2xl"
             >
               <NavLink to="/teacherRegisteration">GET STARTED</NavLink>
             </a>
@@ -239,8 +232,10 @@ const MulitpleFeatureSection = () => {
 
   return (
     <>
-      <h1 className="flex justify-center text-8xl mb-5 text-center">
-        How to Become a Tutor
+      <h1 className="flex justify-center text-8xl mb-5 text-center font-bold text-gray-700">
+        <span className="border-b-4 border-blue-400">
+          How to Become a Tutor
+        </span>
       </h1>
       <div className=" p-4 space-x-4 flex justify-center ">
         <ul
@@ -279,7 +274,7 @@ const MulitpleFeatureSection = () => {
           text={"the first step "}
           image={teacher1}
           desc={
-            "able content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by ac"
+            "Choose a Book Title That Fits Your Domain, Plan Its Content, Conduct Comprehensive Research, and Divide Chapters Into Topics. Also, Find the Necessary Resources Required for Creating Books."
           }
           desc2={
             "This is another para like udemy ooking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their defa"
@@ -291,7 +286,7 @@ const MulitpleFeatureSection = () => {
           text={"the second step"}
           image={teacher2}
           desc={
-            "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore alway "
+            "Now, we are going to record video and audio explanations for each topic. You need to preplan your lecture content and aim to keep the lecture duration short to prevent students from getting bored. Your lecture must be interactive. You can follow basic tutorials for teachers to make your lecture interactive"
           }
           desc2={
             "This is another para like udemy hich don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
@@ -303,7 +298,7 @@ const MulitpleFeatureSection = () => {
           text={"the third step"}
           image={teacher4}
           desc={
-            "dney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.3The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicer"
+            "Now it's time to create your book. Everything is ready. We need to write the content of the book and upload the audio and video of each topic using V-Books Creator tools. The content should be written in simple language and formatted to resemble handwritten notes"
           }
           desc2={
             "This is another para like udemy ages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even  "
@@ -315,7 +310,7 @@ const MulitpleFeatureSection = () => {
           text={"the fourth step"}
           image={teacher3}
           desc={
-            "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore alway "
+            "Now you are just one click away from publishing your book. After completing the book, you need to submit it. You can now publish your book by adding price details and providing information about the book, as well as any offers available for students."
           }
           desc2={
             "This is another para like udemy  look even slightly believable. I"
@@ -354,16 +349,16 @@ export function FeatureSection({ text, image, desc, desc2 }) {
         <section className="relative pt-10 xl:pt-14">
           <div className="mx-auto lg:max-w-[103rem] w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-8 lg:gap-10 xl:gap-12">
             <div className="mx-auto text-center lg:text-left flex flex-col max-w-3xl justify-center lg:justify-start lg:py-8 flex-1 lg:w-1/2 lg:max-w-none">
-              <h1 className="text-indigo-950 text-black text-4xl/snug sm:text-6xl/tight lg:text-5xl/tight xl:text-6xl/tight font-semibold text">
+              <h1 className="text-indigo-950 text-black text-4xl/snug sm:text-6xl/tight lg:text-5xl/tight xl:text-6xl/tight font-semibold text text-left">
                 {text}{" "}
                 {/* <span className="bg-indigo-50 text-blue-700 dark:text-indigo-300 inline-block  border-indigo-600 px-3">
                   Digital Agency
                 </span> */}
               </h1>
-              <p className="mt-10 text-black dark:text-gray-300 lg:text-2xl max-w-2xl lg:max-w-none mx-auto text-left ">
+              <p className="mt-10 text-black dark:text-gray-300 lg:text-4xl max-w-2xl lg:max-w-none mx-auto text-left ">
                 {desc}
               </p>
-              <p className="mt-10 text-black dark:text-gray-300 lg:text-2xl max-w-2xl lg:max-w-none mx-auto text-left">
+              <p className="mt-10 text-black dark:text-gray-300 lg:text-2xl max-w-2xl lg:max-w-none mx-auto text-left hidden">
                 {desc2}
               </p>
               {/* <div className="mt-10 flex gap-4 justify-center lg:justify-start flex-wrap">
