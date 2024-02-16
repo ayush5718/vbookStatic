@@ -35,10 +35,11 @@ function Testinomials() {
               </figcaption>
               <blockquote class="mx-auto mb-8 max-w-2xl text-black text-2xl">
                 <p class="my-4">
-                  "I recently got my hands on Flowbite Pro, and holy crap, I'm
-                  speechless with how easy this was to integrate within my
-                  application. Most templates are a pain, code is scattered, and
-                  near impossible to theme.
+                  ""V-Book has truly revolutionized my learning journey. With
+                  its three-phase learning feature (text, audio, and video), it
+                  provides me with an in-depth understanding of every concept.
+                  I've always sought a platform that prioritizes academic books
+                  at a minimal cost, and V-Book delivers exactly what I need."
                 </p>
               </blockquote>
             </figure>
@@ -58,10 +59,10 @@ function Testinomials() {
               </figcaption>
               <blockquote class="mx-auto mb-8 max-w-2xl text-black text-2xl">
                 <p class="my-4">
-                  "FlowBite provides a robust set of design tokens and
-                  components based on the popular Tailwind CSS framework. From
-                  the most used UI components like forms and navigation bars to
-                  the whole app screens
+                  ""It is the best platform for every student in search of
+                  academic books. Considering the price, the quality provided by
+                  V-Books is absolutely remarkable. I recommend every student to
+                  consider this platform as their study partner."
                 </p>
               </blockquote>
             </figure>

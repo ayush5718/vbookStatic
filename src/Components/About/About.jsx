@@ -27,16 +27,17 @@ const About = () => {
               </div>
               <div className="md:7/12 lg:w-6/12 text-2xl w-[300px] mx-auto">
                 <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
-                  Nuxt development is carried out by passionate developers
+                  How V-book initiated ?
                 </h2>
-                <p className="mt-6 text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  omnis voluptatem accusantium nemo perspiciatis delectus atque
-                  autem! Voluptatum tenetur beatae unde aperiam, repellat
-                  expedita consequatur! Officiis id consequatur atque
-                  doloremque!
+                <p className="mt-6 text-gray-600 md:text-3xl">
+                  V-Book is the brainchild of our founder, Vaibhav, who
+                  envisioned a solution to a common problem faced by every
+                  student during their learning journey with books. Not only did
+                  he identify the problem, but he also conceived a solution: a
+                  comprehensive book that integrates text, audio, and visual
+                  explanations, all at a minimal cost.!
                 </p>
-                <p className="mt-4 text-gray-600">
+                <p className="mt-4 text-gray-600 hidden">
                   {" "}
                   Nobis minus voluptatibus pariatur dignissimos libero quaerat
                   iure expedita at? Asperiores nemo possimus nesciunt dicta
@@ -46,7 +47,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white relative   flex items-center  n justify-center overflow-hidden z-50 ">
+        <div className="bg-white relative   flex items-center  n justify-center overflow-hidden z-50 border-t-2 border-blue-500 ">
           <div className="relative mx-auto h-full px-4  pb-20   md:pb-10 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
             <div className="flex flex-col items-center justify-between lg:flex-row py-16">
               <div className=" relative ">
@@ -57,32 +58,34 @@ const About = () => {
                   /> */}
                 </div>
                 <div className="lg:max-w-xl lg:pr-5 relative z-40">
-                  <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug">
+                  <h2 className="mb-6 max-w-lg text-5xl font-light leading-snug tracking-tight text-g1 sm:text-7xl sm:leading-snug hidden">
                     We make you look
                     <span className="my-1 inline-block border-b-8 border-g4 bg-white px-4 font-bold text-g4 animate_animated animate_flash">
                       different
                     </span>
                   </h2>
                   <p className="text-2xl text-gray-700 ">
-                    <ul className="list-disc p-2 flex flex-col gap-4 md:w-[400px] w-[300px]">
+                    <ul className="list-disc p-2 flex flex-col gap-4 md:w-[600px] w-[300px] md:text-3xl">
                       <li>
-                        This is the FIrst point Lorem ipsum dolor sit
-                        amet.lorem6 Lorem ipsum dolor sit amet consectetur.
+                        We believe that everyone has something valuable to
+                        teach, regardless of their background or expertise
                       </li>
                       <li>
-                        This is the secobnd point Lorem ipsum dolor, sit amet
-                        consectetur adipisicing.
+                        This realization led to another breakthrough solution: a
+                        platform where individuals can share their knowledge and
+                        expertise with others in their domain.
                       </li>
                       <li>
-                        This is the third point Lorem, ipsum dolor sit amet
-                        consectetur adipisicing elit. Velit blanditiis tenetur
-                        molestias nobis. Amet, iusto. Unde explicabo
+                        No professional degree is required to teach; even
+                        students can impart knowledge in their areas of
+                        expertise, helping others to grow.
                       </li>
                       <li>
-                        This is the fourth point Lorem ipsum dolor, sit amet
-                        consectetur adipisicing.
+                        These two solutions collectively gave rise to a platform
+                        where everyone can both teach and learn from others.
+                        This platform is known as V-Book (Voice Book)
                       </li>
-                      <li>
+                      <li className="hidden">
                         This is the fifth point Lorem ipsum dolor sit amet
                         consectetur, adipisicing elit. Sed, nemo.
                       </li>
@@ -112,7 +115,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="py-16 bg-white border-t-2">
+        <div className="py-16 bg-white border-t-2 border-orange-600">
           <h1 className="md:text-8xl text-center font-bold text-6xl mb-8">
             Why
             <span className="lowercase">
@@ -134,25 +137,30 @@ const About = () => {
                   loading="lazy"
                   width=""
                   height=""
+                  className="about-3-img"
                 />
               </div>
               <div className="md:7/12 lg:w-6/12 text-2xl w-[300px] mx-auto">
-                <h2 className="text-4xl text-gray-900 font-bold md:text-7xl mb-2">
-                  This wil be the heading
-                </h2>
-                <ul className="list-disc p-2 flex flex-col gap-4 md:w-[400px] w-[300px]">
+                <ul className="list-disc p-4 flex flex-col gap-4 md:w-[700px] w-[300px] md:text-3xl tracking-widest md:mt-8">
                   <li>
-                    This is the FIrst point Lorem ipsum dolor sit amet.lorem6
-                    Lorem ipsum dolor sit amet consectetur.
+                    In recent decades, there have been numerous transformations
+                    in the world of books, yet few have focused on addressing
+                    the genuine struggles faced by students. What students truly
+                    need is a comprehensive book that elucidates concepts
+                    clearly without the need for additional assistance.
                   </li>
                   <li>
-                    This is the secobnd point Lorem ipsum dolor, sit amet
-                    consectetur adipisicing.
+                    Often, students are required to purchase entire courses,
+                    which can be prohibitively expensive, even though they may
+                    only require certain modules from the book. However, this
+                    issue is addressed through the introduction of chapterwise
+                    V-books.
                   </li>
                   <li>
-                    This is the third point Lorem, ipsum dolor sit amet
-                    consectetur adipisicing elit. Velit blanditiis tenetur
-                    molestias nobis. Amet, iusto. Unde explicabo
+                    Every teacher aspires to pen their own book, but many are
+                    unable to do so due to a lack of resources. With V-books,
+                    teachers can easily create and publish their own books,
+                    solving this dilemma effectively.
                   </li>
                   <li>
                     This is the fourth point Lorem ipsum dolor, sit amet

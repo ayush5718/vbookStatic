@@ -1,5 +1,5 @@
 .slider-content {
-  background: url("https://i.ibb.co/BGgHRbK/slider1.png");
+  background: url("src/assets/images/slider1.png");
   background-position: center;
   background-size: cover;
   background-origin: content-box;
@@ -8,23 +8,30 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; */
-  width: 100vw;
-  height: 100vh;
+  width: 2005px;
+  /* height: 100vh; */
 }
 .slider-content-2 {
-  background: url("https://i.ibb.co/8XV7vm4/slider2.png");
+  background: url("src/assets/images/slider2.png");
   background-position: center;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 2005px;
+  /* height: 100vh; */
 }
 
 .slider-content-3 {
-  background: url("https://img.freepik.com/free-vector/background-wave-pattern-design-gradient-illustrations_483537-1338.jpg?w=1060&t=st=1707739623~exp=1707740223~hmac=6952da95ebaf422f3ae8b2978d1bc143361d872143893d0d75b15d9db6d42375");
+  background: url("src/assets/images/slider3.png");
   background-position: center;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  width: 2005px;
+  /* height: 100vh; */
+}
+.slider-content-4 {
+  background: url("src/assets/images/slider4.png");
+  background-position: center;
+  background-size: cover;
+  width: 2005px;
+  /* height: 100vh; */
 }
 .carousel-indicators {
   opacity: 0;

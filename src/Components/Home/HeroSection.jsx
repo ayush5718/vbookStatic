@@ -31,7 +31,7 @@ import becomeatutor from "/src/assets/images/becomeAtutor.png";
 
 const HeroSection = () => {
   return (
-    <>
+    <div class="mt-[60px]">
       {/* hero section carousel */}
 
       <SliderHero />
@@ -342,7 +342,7 @@ const HeroSection = () => {
         {/* <Faq /> */}
         <svg class="animate-bounce w-6 h-6"></svg>
       </div>
-    </>
+    </div>
   );
 };
 

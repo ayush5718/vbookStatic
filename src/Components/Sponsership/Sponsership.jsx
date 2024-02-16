@@ -5,6 +5,8 @@ import company2 from "/src/assets/images/cell.png";
 import company3 from "/src/assets/images/iem.png";
 import company4 from "/src/assets/images/acm.png";
 import company5 from "/src/assets/images/uniclass.png";
+import company6 from "/src/assets/images/bepositive.png";
+
 // import company5 from "/src/assets/images/ureckon.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -13,12 +15,12 @@ const Sponsership = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
@@ -68,18 +70,22 @@ const Sponsership = () => {
       id: 5,
       img: `${company5}`,
     },
+    {
+      id: 6,
+      img: `${company6}`,
+    },
   ];
   return (
     <>
       <div className="clients mt-100">
-        <div className="container b">
+        <div className="container">
           <div className="section-header">
             <h2>Partners</h2>
             <p>Here are our partners</p>
           </div>
           <Slider {...settings} className="bg-white">
             {data.map((item) => (
-              <div key={item.id} className="owl-carousel clients-carousel ">
+              <div key={item.id} className="">
                 <img src={item.img} alt="comapny-images" />
               </div>
             ))}
