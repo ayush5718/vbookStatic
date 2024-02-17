@@ -4,7 +4,7 @@ import "./student.css";
 import axios from "axios";
 
 const StudentPreRegisteration = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(true);
   const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -22,7 +22,15 @@ const StudentPreRegisteration = () => {
 
   const handleSubmit = async (e) => {
     // console.log(formData);
+
     e.preventDefault();
+    // Check if all fields are filled
+    for (const field in formData) {
+      if (!formData[field]) {
+        console.log(`${field} is empty`);
+        return;
+      }
+    }
     setLoading(true);
 
     try {
@@ -151,12 +159,14 @@ const StudentPreRegisteration = () => {
                     {loading ? (
                       <div className="loader"></div>
                     ) : (
-                      <button
-                        type="submit"
-                        className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90`}
-                      >
-                        <NavLink to="/thankyou">Submit</NavLink>
-                      </button>
+                      submitted && (
+                        <button
+                          type="submit"
+                          className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90`}
+                        >
+                          Submit
+                        </button>
+                      )
                     )}
                   </div>
                 </div>

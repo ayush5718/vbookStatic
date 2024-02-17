@@ -146,7 +146,7 @@ const TeacherRegister = () => {
               className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90 
                 `}
             >
-              <NavLink to="/thankyou">Submit</NavLink>
+              Submit
             </button>
           )}
         </div>
