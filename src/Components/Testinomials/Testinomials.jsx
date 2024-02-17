@@ -1,8 +1,10 @@
 import React from "react";
-
+import testinomial1 from "/src/assets/images/test1.png";
+import testinomial2 from "/src/assets/images/test2.png";
+import testinomial3 from "/src/assets/images/test3.png";
+import testinomial4 from "/src/assets/images/test4.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import "./testinomials.css";
 
 function Testinomials() {
@@ -23,7 +25,7 @@ function Testinomials() {
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
                   class="md:w-4/12 rounded-full w-4/12"
-                  src="/src/assets/images/test1.png"
+                  src={testinomial1}
                   alt="profile picture"
                 />
                 <div class="space-y-0.5 font-medium text-black md:text-2xl text-2xl">
@@ -47,11 +49,11 @@ function Testinomials() {
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
                   class="md:w-4/12 rounded-full w-4/12"
-                  src="/src/assets/images/Test2.png"
+                  src={testinomial3}
                   alt="profile picture"
                 />
                 <div class="space-y-0.5 font-medium text-black text-left lg:text-2xl text-2xl">
-                  <div>Aayush Kumar</div>
+                  <div>Shubhashish Roy</div>
                   <div class="text-sm font-light text-black lg:text-xl hidden">
                     Lead designer at Dropbox
                   </div>
@@ -70,7 +72,7 @@ function Testinomials() {
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
                   class="md:w-4/12 rounded-full w-4/12"
-                  src="/src/assets/images/Test4.png"
+                  src={testinomial4}
                   alt="profile picture"
                 />
                 <div class="space-y-0.5 font-medium dark:text-black text-left lg:text-2xl text-2xl">
@@ -94,10 +96,10 @@ function Testinomials() {
                 <img
                   class="md:w-4/12 rounded-full w-4/12"
                   alt="profile picture"
-                  src="/src/assets/images/Test3.png"
+                  src={testinomial2}
                 />
                 <div class="space-y-0.5 font-medium text-black text-left lg:text-2xl text-2xl">
-                  <div>Shubhashish Roy</div>
+                  <div>Aayush Kumar</div>
                   <div class="text-sm font-light text-black dark:text-gray-400 lg:text-xl hidden">
                     CTO at Google
                   </div>

@@ -1,20 +1,12 @@
 import React, { Fragment, useState, useEffect, useRef } from "react";
-// import Swiper from "swiper/react";
-// import Swiper, { SwiperOptions } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-// import Swiper from "swiper";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import testimonial1 from "/src/assets/images/testimonial-1.jpg";
-// import testimonial2 from "/src/assets/images/testimonial-2.jpg";
-// import testimonial3 from "/src/assets/images/testimonial-3.jpg";
-// import testimonial4 from "/src/assets/images/testimonial-4.jpg";
-// import testimonial5 from "/src/assets/images/testimonial-5.jpg";
 import "swiper/css";
 import "swiper/css/effect-creative";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import teacherHeader from "/src/assets/images/becomeaTutor.jpg";
 import teacher1 from "/src/assets/images/teacher4.gif";
 import teacher2 from "/src/assets/images/teacher2.gif";
 import teacher3 from "/src/assets/images/teacher3.gif";
@@ -24,42 +16,13 @@ import { NavLink } from "react-router-dom";
 import bb from "./images/bb.png";
 import inspire from "./images/inspire.png";
 import trophy from "./images/trophy.png";
-
-// import getstarted1 from "/src/assets/images/planyourbook.png";
+import teacherProfile1 from "/src/assets/images/teach1.png";
+import teacherProfile2 from "/src/assets/images/teach2.png";
+import teacherProfile3 from "/src/assets/images/teach3.png";
 
 import "./Teacher.css";
-// import NewPage from "../Gaurav/NewPage";
-// import Footer from '../Footer/Footer';
 
 const Teacher = () => {
-  // const [showModal, setShowModal] = useState(false);
-  // const data = [
-  //   {
-  //     name: `John Morgan`,
-  //     // img: testimonial1,
-  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  //   },
-  //   {
-  //     name: `Ellie Anderson`,
-  //     // img: testimonial2,
-  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  //   },
-  //   {
-  //     name: `Nia Adebayo`,
-  //     img: testimonial3,
-  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  //   },
-  //   {
-  //     name: `Rigo Louie`,
-  //     img: testimonial4,
-  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  //   },
-  //   {
-  //     name: `Mia Williams`,
-  //     img: testimonial5,
-  //     review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
-  //   },
-  // ];
   const settings = {
     dots: true,
     infinite: true,
@@ -67,8 +30,8 @@ const Teacher = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -122,7 +85,7 @@ const Teacher = () => {
             </span>
           </h1>
           <img
-            src="/src/assets/images/becomeAtutor.jpg"
+            src={teacherHeader}
             alt=""
             className=" md:w-full md:h-[508px] w-full blur-[1px]	"
           />
@@ -192,7 +155,7 @@ const Teacher = () => {
                 regardless of their background. Any deserving teacher can
                 effectively teach on this platform”
               </p>
-              <img src="/src/assets/images/teach1.png" />
+              <img src={teacherProfile1} />
               <div class="details">
                 <span>Chandan Prasad</span>
               </div>
@@ -204,7 +167,7 @@ const Teacher = () => {
                 write my own book. For this purpose, a reliable platform for
                 teaching students is crucial. This platform offers me”
               </p>
-              <img src="/src/assets/images/teach2.png" />
+              <img src={teacherProfile2} />
               <div class="details">
                 <span>Anjali Chaudhary</span>
               </div>
@@ -216,7 +179,7 @@ const Teacher = () => {
                 with the help of the V-book creator tool. This assists students
                 and enables them to earn money by publishing V-Books." ”
               </p>
-              <img src="/src/assets/images/teach3.png" />
+              <img src={teacherProfile3} />
               <div class="details">
                 <span>Dhruv Tripathi</span>
               </div>

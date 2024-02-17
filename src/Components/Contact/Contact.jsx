@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import contactHeader from "/src/assets/images/contactUs.jpg";
 import axios from "axios";
 import "./contact.css";
 const Contact = () => {
@@ -48,7 +49,7 @@ const Contact = () => {
             </span>
           </h1>
           <img
-            src="/src/assets/images/contactUs.jpg"
+            src={contactHeader}
             alt=""
             className=" md:w-full md:h-[508px] w-full blur-[0.5px]	"
           />

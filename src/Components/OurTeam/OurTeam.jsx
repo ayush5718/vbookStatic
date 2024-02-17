@@ -1,6 +1,7 @@
 import React from "react";
 import { FaInstagramSquare, FaLinkedin, FaFacebook } from "react-icons/fa";
 import "./ourteam.css";
+import teamsHeader from "/src/assets/images/teams.jpg";
 import Founder from "/src/assets/images/Vaibhav.png";
 import CEO from "/src/assets/images/Shubhashish.png";
 import Techlead from "/src/assets/images/Bhavesh.png";
@@ -22,7 +23,7 @@ const OurTeam = () => {
               </span>
             </h1>
             <img
-              src="/src/assets/images/teams.jpg"
+              src={teamsHeader}
               alt=""
               className=" md:w-full md:h-[508px] w-full blur-[2px]	"
             />

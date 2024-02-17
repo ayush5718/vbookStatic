@@ -1,6 +1,7 @@
 // export default About;
 import React from "react";
 import { Routes } from "react-router-dom";
+import aboutHeader from "/src/assets/images/aboutUs.jpg";
 import about1 from "/src/assets/images/about1.png";
 import about2 from "/src/assets/images/aboutUs2.png";
 import about3 from "/src/assets/images/aboutus3.png";
@@ -20,7 +21,7 @@ const About = () => {
               </span>
             </h1>
             <img
-              src="/src/assets/images/aboutUs.jpg"
+              src={aboutHeader}
               alt=""
               className=" md:w-full md:h-[508px] w-full blur-[1px]	"
             />

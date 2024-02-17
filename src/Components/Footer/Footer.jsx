@@ -75,7 +75,7 @@ function Footer() {
                 })}
               </div>
 
-              <div className="flex gap-7 lg:ml-0 sm:ml-[184px]  mr-12 text-[18px] text-[#292267] justify-center md:justify-start md:opacity-1">
+              <div className="flex gap-7 lg:ml-0 sm:ml-[184px]  text-[18px] text-[#292267] justify-center md:justify-start md:opacity-1">
                 {iconsTab.map(({ icon }, index) => {
                   return (
                     <div
@@ -93,7 +93,7 @@ function Footer() {
             {/* middle div */}
 
             <div className="flex flex-col md:gap-8 gap-10 relative md:text-4xl">
-              <p className="md:text-[30px] text-[20px] font-bold footer-main text-[white]">
+              <p className="text-[30px] font-bold footer-main text-[white]">
                 ABOUT US
               </p>
 
