@@ -2,12 +2,12 @@ import React from "react";
 import { FaInstagramSquare, FaLinkedin, FaFacebook } from "react-icons/fa";
 import "./ourteam.css";
 import teamsHeader from "/src/assets/images/teams.jpg";
-import Founder from "/src/assets/images/Vaibhav.png";
-import CEO from "/src/assets/images/Shubhashish.png";
-import Techlead from "/src/assets/images/Bhavesh.png";
-import Frontend from "/src/assets/images/Nawlesh.png";
-import backend from "/src/assets/images/Nilanjan.png";
-import fullStack from "/src/assets/images/Aayush.png";
+import Founder from "/src/assets/images/vaibhav.png";
+import CEO from "/src/assets/images/shubhashish.png";
+import Techlead from "/src/assets/images/bhavesh.png";
+import Frontend from "/src/assets/images/nawlesh.png";
+import backend from "/src/assets/images/nilanjan.png";
+import fullStack from "/src/assets/images/aayush.png";
 const OurTeam = () => {
   return (
     <>
@@ -180,9 +180,10 @@ const OurTeam = () => {
                         </a>
 
                         <a
-                          href="#"
+                          href="https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav"
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Linkdin"
+                          target="_blank"
                         >
                           <FaLinkedin />
                         </a>
@@ -218,9 +219,10 @@ const OurTeam = () => {
                         </a>
 
                         <a
-                          href="#"
+                          href="https://www.linkedin.com/in/subhasish-halder-173a86201?trk=blended-typeahead"
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Linkdin"
+                          target="_blank"
                         >
                           <FaLinkedin />
                         </a>
@@ -255,9 +257,10 @@ const OurTeam = () => {
                         </a>
 
                         <a
-                          href="#"
+                          href="https://www.linkedin.com/in/bhavesh-kumar-4a3b48209/"
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Linkdin"
+                          target="_blank"
                         >
                           <FaLinkedin />
                         </a>
@@ -292,9 +295,10 @@ const OurTeam = () => {
                         </a>
 
                         <a
-                          href="#"
+                          href="https://www.linkedin.com/in/nawlesh-nand-a420681b8/"
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Linkdin"
+                          target="_blank"
                         >
                           <FaLinkedin />
                         </a>
@@ -331,9 +335,10 @@ const OurTeam = () => {
                         </a>
 
                         <a
-                          href="#"
+                          href="https://www.linkedin.com/in/nilanjan-bhattacharya-139539229/"
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Linkdin"
+                          target="_blank"
                         >
                           <FaLinkedin />
                         </a>

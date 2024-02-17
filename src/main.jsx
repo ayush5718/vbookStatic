@@ -18,6 +18,7 @@ import Teacher from "./Components/Teacher/Teacher.jsx";
 import OurTeam from "./Components/OurTeam/OurTeam.jsx";
 import TeacherRegister from "./Components/TeacherRegister/TeacherRegister.jsx";
 import SliderHero from "./Components/SliderHero/SliderHero.jsx";
+import ThankYou from "./Components/TeacherRegister/ThankYou.jsx";
 // import NewPage from "./Components/Gaurav/NewPage.jsx";
 
 const router = createBrowserRouter(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       {/* <Route path='/' element={<Services/>}/> */}
       <Route path="/teacher" element={<Teacher />} />
       <Route path="/ourteams" element={<OurTeam />} />
+      <Route path="/thankyou" element={<ThankYou />} />
       <Route path="/registeration" element={<StudentPreRegisteration />} />
       <Route path="/teacherRegisteration" element={<TeacherRegister />} />
       {/* <Route path="/gaurav" element={<NewPage />} /> */}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./student.css";
 import axios from "axios";
 
@@ -139,6 +140,7 @@ const StudentPreRegisteration = () => {
                     </label>
                     <input
                       class="w-full text-3xl shadow-inner p-4 border-0"
+                      placeholder="dd/mm/yy"
                       type="date"
                       name="dob"
                       onChange={handleChange}
@@ -151,11 +153,9 @@ const StudentPreRegisteration = () => {
                     ) : (
                       <button
                         type="submit"
-                        className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90 ${
-                          submitted ? "submitted" : ""
-                        }`}
+                        className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90`}
                       >
-                        {submitted ? "Submitted" : "Submit"}
+                        <NavLink to="/thankyou">Submit</NavLink>
                       </button>
                     )}
                   </div>

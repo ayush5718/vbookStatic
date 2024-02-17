@@ -93,7 +93,7 @@ const Services = () => {
       <div className="flex justify-center">
         <div className="border-[#01ADEF] border-[1px] text-[#01ADEF] hover:bg-[#01ADEF] hover:text-gray-50 cursor-pointer py-[2px] px-[8px] rounded-[2px] md:hidden text-3xl ">
           <h1 className=" p-3  rounded-lg mt-2 ">
-            <NavLink>Pre Registeration</NavLink>
+            <NavLink to="/registeration">Pre Registeration</NavLink>
           </h1>
         </div>
       </div>

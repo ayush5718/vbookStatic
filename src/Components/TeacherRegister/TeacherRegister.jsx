@@ -1,5 +1,7 @@
 import { useState } from "react";
 // import GoogleIcon from "react-icons/fa";
+
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Register.css";
@@ -141,11 +143,10 @@ const TeacherRegister = () => {
           ) : (
             <button
               type="submit"
-              className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90 ${
-                submitted ? "submitted" : ""
-              }`}
+              className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90 
+                `}
             >
-              {submitted ? "Submitted" : "Submit"}
+              <NavLink to="/thankyou">Submit</NavLink>
             </button>
           )}
         </div>

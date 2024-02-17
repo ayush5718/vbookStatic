@@ -4,6 +4,7 @@ import Carousel from "react-bootstrap/Carousel";
 import slider1 from "/src/assets/images/slider1.png";
 import slider2 from "/src/assets/images/slider2.png";
 import slider3 from "/src/assets/images/slider3.png";
+import slider4 from "/src/assets/images/slider4.png";
 // import Image1 from "/src/Components/ExampleCarouselImage/image1.jpg";
 import "./slider.css";
 // import slider1 from "/src/assets/images/slider1.png";
@@ -20,6 +21,10 @@ function SliderHero() {
     {
       slider: 3,
       img: slider3,
+    },
+    {
+      slider: 4,
+      img: slider4,
     },
   ];
   return (
