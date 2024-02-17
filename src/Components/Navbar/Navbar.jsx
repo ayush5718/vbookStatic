@@ -41,6 +41,9 @@ const Navbar = () => {
   const handleNavItemClick = (navItem) => {
     setActiveNav(navItem.name);
     navigate(navItem.url);
+    if (window.innerWidth <= 1150) {
+      setShowMenu(false);
+    }
   };
   return (
     <nav class="fixed top-0 w-full  bg-[#02022a] flex justify-between items-center text-gray-50 border-b-[1px] border-gray-400 shadow-md shadow-gray-500 p-2 z-[9000] text-[1.2rem] relative">
