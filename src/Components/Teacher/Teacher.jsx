@@ -67,8 +67,8 @@ const Teacher = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
@@ -111,11 +111,23 @@ const Teacher = () => {
     <Fragment>
       {/* get started section starts */}
 
-      <section id="home" class="teacher-home ">
-        <h1 className="text-white lg"> Become a Tutor</h1>
-        <button className=" px-10 py-8 text-2xl mt-5 bg-[#01adef] rounded text-white font-bold">
-          <NavLink to="/teacherRegisteration">Get Started</NavLink>
-        </button>
+      <section id="home" class="about-home relative">
+        <div className="flex justify-center items-center">
+          <h1 className="absolute z-50 md:text-8xl text-white text-6xl">
+            <span
+              style={{ textShadow: "2px 5px 5px #000" }}
+              className="tracking-widest		"
+            >
+              Become a Tutor
+            </span>
+          </h1>
+          <img
+            src="/src/assets/images/becomeAtutor.jpg"
+            alt=""
+            className=" md:w-full md:h-[508px] w-full blur-[1px]	"
+          />
+          {/* <h1 className="text-8xl text-white font-bold"> About Us</h1> */}
+        </div>
       </section>
 
       {/* </div> */}
@@ -169,32 +181,44 @@ const Teacher = () => {
       <MulitpleFeatureSection />
       {/* <NewPage /> */}
 
-      <section class="testimonial-section m-[50px] border-b-2 border-t-2 p-5">
-        <div class="testimonials sm:w-[300px] lg:w-[1100px]">
+      <section class="testimonial-section m-[50px] border-b-2 border-t-2">
+        <div class="testimonials sm:w-[270px] lg:w-[1100px]">
           <Slider {...settings}>
             <div class="testimonial">
               <p>
-                “ strategy and they have helped us so much in this point. They
-                have been very professional and honest with their proposals.
-                Highly recommended.”
+                “ This platform provides me with the opportunity to share my
+                knowledge of web development with other students. It's ideal for
+                anyone who wants to teach students using their expertise,
+                regardless of their background. Any deserving teacher can
+                effectively teach on this platform”
               </p>
-              <img src="https://w.inboundlabs.co/hubfs/lital-headshot.png?t=1516719436914" />
+              <img src="/src/assets/images/teach1.png" />
               <div class="details">
-                <span>SERGIO GAZEAU</span>
-                <span>Company Name Digital Marketing Manager.</span>
+                <span>Chandan Prasad</span>
               </div>
             </div>
 
             <div class="testimonial">
               <p>
-                “ strategy and they have helped us so much in this point. They
-                have been very professional and honest with their proposals.
-                Highly recommended.”
+                “ As an individual teacher, I've always harbored the desire to
+                write my own book. For this purpose, a reliable platform for
+                teaching students is crucial. This platform offers me”
               </p>
-              <img src="https://w.inboundlabs.co/hubfs/T024FNRMZ-U053S4LT1-38a6c5d03ba7-72.jpg?t=1516719436914" />
+              <img src="/src/assets/images/teach2.png" />
               <div class="details">
-                <span>SERGIO GAZEAU</span>
-                <span>Company Name Digital Marketing Manager.</span>
+                <span>Anjali Chaudhary</span>
+              </div>
+            </div>
+            <div class="testimonial">
+              <p>
+                “"This is the first platform that works for academic books and
+                also provides a platform for teachers to create complete books
+                with the help of the V-book creator tool. This assists students
+                and enables them to earn money by publishing V-Books." ”
+              </p>
+              <img src="/src/assets/images/teach3.png" />
+              <div class="details">
+                <span>Dhruv Tripathi</span>
               </div>
             </div>
           </Slider>
@@ -232,7 +256,7 @@ const MulitpleFeatureSection = () => {
 
   return (
     <>
-      <h1 className="flex justify-center text-8xl mb-5 text-center font-bold text-gray-700">
+      <h1 className="flex justify-center md:text-8xl mb-5 text-center font-bold text-gray-700">
         <span className="border-b-4 border-blue-400">
           How to Become a Tutor
         </span>

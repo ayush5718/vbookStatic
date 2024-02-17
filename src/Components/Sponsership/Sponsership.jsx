@@ -77,7 +77,7 @@ const Sponsership = () => {
   ];
   return (
     <>
-      <div className="clients mt-100">
+      <div className="clients md:mb-[50px] md:mt-[50px] mt-0">
         <div className="container">
           <div className="section-header">
             <h2>Partners</h2>

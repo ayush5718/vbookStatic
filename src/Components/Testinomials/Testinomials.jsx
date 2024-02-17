@@ -8,7 +8,7 @@ import "./testinomials.css";
 function Testinomials() {
   return (
     <>
-      <section class="bg-white lg:mt-[200px] mt-[300px]">
+      <section class="bg-white">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
           <div class="mx-auto max-w-screen-sm border-b-2 border-black">
             <h2 class="mb-4 text-4xl lg:text-6xl tracking-tight font-extrabold text-gray-900 ">
@@ -22,13 +22,13 @@ function Testinomials() {
             <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 lg:border-r dark:bg-white dark:border-gray-700">
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
-                  class="lg:w-2/12 rounded-full w-3/12"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                  class="md:w-4/12 rounded-full w-4/12"
+                  src="/src/assets/images/test1.png"
                   alt="profile picture"
                 />
-                <div class="space-y-0.5 font-medium text-black lg:text-2xl">
-                  <div>Bonnie Green</div>
-                  <div class="text-sm font-light text-black lg:text-xl">
+                <div class="space-y-0.5 font-medium text-black md:text-2xl text-2xl">
+                  <div>Amit Singh</div>
+                  <div class="text-sm font-light text-black lg:text-xl hidden">
                     Developer at Open AI
                   </div>
                 </div>
@@ -46,13 +46,13 @@ function Testinomials() {
             <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-white dark:border-gray-700">
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
-                  class="lg:w-2/12 rounded-full w-3/12"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                  class="md:w-4/12 rounded-full w-4/12"
+                  src="/src/assets/images/Test2.png"
                   alt="profile picture"
                 />
-                <div class="space-y-0.5 font-medium text-black text-left lg:text-2xl">
-                  <div>Roberta Casas</div>
-                  <div class="text-sm font-light text-black lg:text-xl">
+                <div class="space-y-0.5 font-medium text-black text-left lg:text-2xl text-2xl">
+                  <div>Aayush Kumar</div>
+                  <div class="text-sm font-light text-black lg:text-xl hidden">
                     Lead designer at Dropbox
                   </div>
                 </div>
@@ -69,44 +69,46 @@ function Testinomials() {
             <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 lg:border-b-0 md:p-12 lg:border-r dark:bg-white dark:border-gray-700">
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
-                  class="lg:w-2/12 rounded-full w-3/12"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                  class="md:w-4/12 rounded-full w-4/12"
+                  src="/src/assets/images/Test4.png"
                   alt="profile picture"
                 />
-                <div class="space-y-0.5 font-medium dark:text-black text-left lg:text-2xl">
-                  <div>Jese Leos</div>
-                  <div class="text-sm font-light text-black text-black lg:text-xl">
+                <div class="space-y-0.5 font-medium dark:text-black text-left lg:text-2xl text-2xl">
+                  <div>Anushree Tiwari</div>
+                  <div class="text-sm font-light text-black text-black lg:text-xl hidden">
                     Software Engineer at Facebook
                   </div>
                 </div>
               </figcaption>
               <blockquote class="mx-auto mb-8 max-w-2xl text-black text-2xl">
                 <p class="my-4">
-                  "As someone who mainly designs in the browser, I've been a
-                  casual user of Figma, but as soon as I saw and started playing
-                  with FlowBite my mind was 🤯.
+                  "The best platform for every college and school student to
+                  learn their subjects at a minimal cost. The chapterwise book
+                  for each subject is the standout feature of this platform; it
+                  offers us numerous choices and significantly reduces costs."
                 </p>
               </blockquote>
             </figure>
             <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-gray-200 md:p-12 dark:bg-white dark:border-gray-700">
               <figcaption class="flex justify-center items-center space-x-3">
                 <img
-                  class="lg:w-2/12 rounded-full w-3/12"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                  class="md:w-4/12 rounded-full w-4/12"
                   alt="profile picture"
+                  src="/src/assets/images/Test3.png"
                 />
-                <div class="space-y-0.5 font-medium text-black text-left lg:text-2xl">
-                  <div>Joseph McFall</div>
-                  <div class="text-sm font-light text-black dark:text-gray-400 lg:text-xl">
+                <div class="space-y-0.5 font-medium text-black text-left lg:text-2xl text-2xl">
+                  <div>Shubhashish Roy</div>
+                  <div class="text-sm font-light text-black dark:text-gray-400 lg:text-xl hidden">
                     CTO at Google
                   </div>
                 </div>
               </figcaption>
               <blockquote class="mx-auto mb-8 max-w-2xl text-black dark:text-gray-400 text-2xl">
                 <p class="my-4">
-                  "This is a very complex and beautiful set of elements. Under
-                  the hood it comes with the best things from 2 different
-                  worlds: Figma and Tailwind.
+                  "The three phases of learning provided by the V-book are the
+                  best way to learn any subject. With this method, I don't
+                  require any lectures or notes; everything is given in the
+                  book, which makes my concepts crystal clear."
                 </p>
               </blockquote>
             </figure>

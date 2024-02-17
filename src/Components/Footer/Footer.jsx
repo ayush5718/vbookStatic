@@ -40,6 +40,12 @@ function Footer() {
       ),
     },
   ];
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scroll behavior
+    });
+  };
   return (
     <>
       <footer className="bg-[#02022a] md:h-[46vh]">
@@ -52,7 +58,7 @@ function Footer() {
               <img
                 src={logo}
                 alt="footer_logo"
-                className="md:w-[30rem]  md:left-[150px] md:absolute md:top-[-170px] absolute top-[-125px]"
+                className="md:w-[27rem]  md:left-[133px] md:absolute md:top-[-72px] absolute top-[-72px]"
               />
               {/* socials */}
               <div className="flex gap-7 lg:ml-0 sm:ml-[184px] text-[18px] text-[#292267] justify-center md:justify-start hidden">
@@ -87,23 +93,31 @@ function Footer() {
             {/* middle div */}
 
             <div className="flex flex-col md:gap-8 gap-10 relative md:text-4xl">
-              <p className="text-[30px] font-bold footer-main text-[white]">
+              <p className="md:text-[30px] text-[20px] font-bold footer-main text-[white]">
                 ABOUT US
               </p>
 
               <span className="top-[38px] absolute w-[7rem] h-[4px] bg-[#3b21e1]"></span>
 
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
-                <NavLink to="#">Home</NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
+                <NavLink to="#" onClick={scrollToTop}>
+                  Home
+                </NavLink>
               </p>
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
-                <NavLink to="/about">About Us</NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
+                <NavLink to="/about" onClick={scrollToTop}>
+                  About Us
+                </NavLink>
               </p>
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
-                <NavLink to="/contact">Contact Us</NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
+                <NavLink to="/contact" onClick={scrollToTop}>
+                  Contact Us
+                </NavLink>
               </p>
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
-                <NavLink to="/ourteams">Our Team</NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
+                <NavLink to="/ourteams" onClick={scrollToTop}>
+                  Our Team
+                </NavLink>
               </p>
               {/* <p className="text-[16px] hover:text-[#377d99] cursor-pointer text-[white] font-medium hover:font-bold">
                 Learn Machines
@@ -115,22 +129,28 @@ function Footer() {
 
             {/* right div */}
             <div className="flex flex-col gap-8 relative lg:mt-0 sm:mt-[15px] md:text-4xl">
-              <p className="text-[30px] font-bold footer-main text-[white] lg:mt-0 mt-8">
+              <p className="md:text-[30px] text-[20px] font-bold footer-main text-[white] lg:mt-0 mt-8">
                 USEFUL LINKS
               </p>
 
               <span className="md:top-[35px] top-[58px] absolute w-[7rem] h-[4px] bg-[#3b21e1]"></span>
 
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
-                <NavLink to="/registeration">Student Pre Registration </NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
+                <NavLink to="/registeration" onClick={scrollToTop}>
+                  Student Pre Registration{" "}
+                </NavLink>
               </p>
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
-                <NavLink to="/teacher">Become A Tutor</NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
+                <NavLink to="/teacher" onClick={scrollToTop}>
+                  Become A Tutor
+                </NavLink>
               </p>
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
-                <NavLink to="">Feedback</NavLink>
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
+                <NavLink to="" onClick={scrollToTop}>
+                  Feedback
+                </NavLink>
               </p>
-              <p className="text-[22px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
+              <p className="md:text-[22px] text-[15px] hover:text-[#377d99] cursor-pointer text-[white] font-medium">
                 FAQ
               </p>
               {/* <p className="text-[16px] text-[white] font-bold ">

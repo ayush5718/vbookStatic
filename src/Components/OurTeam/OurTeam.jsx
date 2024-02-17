@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagramSquare, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaInstagramSquare, FaLinkedin, FaFacebook } from "react-icons/fa";
 import "./ourteam.css";
 import Founder from "/src/assets/images/Vaibhav.png";
 import CEO from "/src/assets/images/Shubhashish.png";
@@ -11,8 +11,23 @@ const OurTeam = () => {
   return (
     <>
       <>
-        <section id="home" class="contact-home">
-          <h1 className="text-8xl text-white font-bold"> Our Teams</h1>
+        <section id="home" class="about-home relative">
+          <div className="flex justify-center items-center">
+            <h1 className="absolute z-50 md:text-8xl font-bold text-white text-6xl ">
+              <span
+                style={{ textShadow: "2px 5px 5px #000" }}
+                className="tracking-widest"
+              >
+                Our Teams
+              </span>
+            </h1>
+            <img
+              src="/src/assets/images/teams.jpg"
+              alt=""
+              className=" md:w-full md:h-[508px] w-full blur-[2px]	"
+            />
+            {/* <h1 className="text-8xl text-white font-bold"> About Us</h1> */}
+          </div>
         </section>
         <section class="bg-white dark:bg-gray-900 lg:mt-[400px]">
           <div class="container px-6 py-10 mx-auto -mt-72 sm:-mt-80 md:-mt-96">
@@ -136,7 +151,7 @@ const OurTeam = () => {
 
               <section class="bg-white">
                 {/* <div class="h-[32rem] "></div> */}
-                <h1 className="lg:text-8xl lg:mb-[200px] text-center font-bold text-gray-800 lg:mt-[-80px]">
+                <h1 className="md:text-8xl md:mb-[200px] text-center font-bold text-gray-800 md:mt-[-80px]">
                   <span className="border-b-4 border-red-400">
                     Our Team Member
                   </span>
@@ -145,7 +160,7 @@ const OurTeam = () => {
                   <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-3">
                     <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl">
                       <img
-                        class="object-cover w-full rounded-xl aspect-square"
+                        class="object-cover md:w-[60%] w-full rounded-xl aspect-square"
                         src={Founder}
                         alt=""
                       />
@@ -160,7 +175,7 @@ const OurTeam = () => {
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Github"
                         >
-                          <FaGithub />
+                          <FaFacebook />
                         </a>
 
                         <a
@@ -181,7 +196,7 @@ const OurTeam = () => {
                     </div>
                     <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl">
                       <img
-                        class="object-cover w-full rounded-xl aspect-square"
+                        class="object-cover md:w-[60%] w-full rounded-xl aspect-square"
                         src={CEO}
                         alt=""
                       />
@@ -198,7 +213,7 @@ const OurTeam = () => {
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Github"
                         >
-                          <FaGithub />
+                          <FaFacebook />
                         </a>
 
                         <a
@@ -220,7 +235,7 @@ const OurTeam = () => {
 
                     <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl">
                       <img
-                        class="object-cover w-full rounded-xl aspect-square"
+                        class="object-cover md:w-[60%] w-full rounded-xl aspect-square"
                         src={Techlead}
                         alt=""
                       />
@@ -235,7 +250,7 @@ const OurTeam = () => {
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Github"
                         >
-                          <FaGithub />
+                          <FaFacebook />
                         </a>
 
                         <a
@@ -257,7 +272,7 @@ const OurTeam = () => {
 
                     <div class="flex flex-col items-center p-4 sm:p-6 rounded-xl">
                       <img
-                        class="object-cover w-full rounded-xl aspect-square"
+                        class="object-cover md:w-[60%] w-full rounded-xl aspect-square"
                         src={Frontend}
                         alt=""
                       />
@@ -272,7 +287,7 @@ const OurTeam = () => {
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Github"
                         >
-                          <FaGithub />
+                          <FaFacebook />
                         </a>
 
                         <a
@@ -294,7 +309,7 @@ const OurTeam = () => {
 
                     <div class="flex flex-col items-center p-4  sm:p-6 rounded-xl ">
                       <img
-                        class="object-cover w-full rounded-xl aspect-square"
+                        class="object-cover md:w-[60%] w-full rounded-xl aspect-square"
                         src={backend}
                         alt=""
                       />
@@ -311,7 +326,7 @@ const OurTeam = () => {
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Github"
                         >
-                          <FaGithub />
+                          <FaFacebook />
                         </a>
 
                         <a
@@ -333,7 +348,7 @@ const OurTeam = () => {
 
                     <div class="flex flex-col items-center p-4  sm:p-6 rounded-xl ">
                       <img
-                        class="object-cover w-full rounded-xl aspect-square"
+                        class="object-cover md:w-[60%] w-full rounded-xl aspect-square"
                         src={fullStack}
                         alt=""
                       />
@@ -348,7 +363,7 @@ const OurTeam = () => {
                           class="mx-2  transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400"
                           aria-label="Github"
                         >
-                          <FaGithub />
+                          <FaFacebook />
                         </a>
 
                         <a

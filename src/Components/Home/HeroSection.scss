@@ -156,3 +156,18 @@
   margin-bottom: -45px;
 }
 }
+
+@media only screen and (min-width:768px) {
+  .section-container{
+    max-width: 768px;
+  }
+  .card{
+    width:calc(25% - 40px);
+  }
+}
+@media only screen and (min-width: 992px) {
+  /* For desktops */
+  .card {
+    width: calc(25% - 40px); /* Three cards per row with some gap */
+  }
+}

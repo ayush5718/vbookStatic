@@ -3,7 +3,7 @@ import "./Services.css";
 import services1 from "/src/assets/images/whatisVbook.gif";
 import services2 from "/src/assets/images/services3.gif";
 import services3 from "/src/assets/images/whatisvbook4.gif";
-
+import { NavLink } from "react-router-dom";
 const Services = () => {
   return (
     <>
@@ -90,6 +90,13 @@ const Services = () => {
           </div>
         </section>
       </div> */}
+      <div className="flex justify-center">
+        <div className="border-[#01ADEF] border-[1px] text-[#01ADEF] hover:bg-[#01ADEF] hover:text-gray-50 cursor-pointer py-[2px] px-[8px] rounded-[2px] md:hidden text-3xl ">
+          <h1 className=" p-3  rounded-lg mt-2 ">
+            <NavLink>Pre Registeration</NavLink>
+          </h1>
+        </div>
+      </div>
       <main className="p-5">
         <div className="py-16 bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">

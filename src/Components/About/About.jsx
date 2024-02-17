@@ -9,8 +9,23 @@ const About = () => {
   return (
     <>
       <>
-        <section id="home" class="about-home">
-          <h1 className="text-8xl text-white font-bold"> About Us</h1>
+        <section id="home" class="about-home relative">
+          <div className="flex justify-center items-center">
+            <h1 className="absolute z-50 md:text-5xl text-white text-5xl ">
+              <span
+                style={{ textShadow: "2px 5px 5px #000" }}
+                className="tracking-widest		"
+              >
+                About Us
+              </span>
+            </h1>
+            <img
+              src="/src/assets/images/aboutUs.jpg"
+              alt=""
+              className=" md:w-full md:h-[508px] w-full blur-[1px]	"
+            />
+            {/* <h1 className="text-8xl text-white font-bold"> About Us</h1> */}
+          </div>
         </section>
         <div className="py-16 bg-white">
           <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
@@ -25,7 +40,7 @@ const About = () => {
                   className="about2-img"
                 />
               </div>
-              <div className="md:7/12 lg:w-6/12 text-2xl w-[300px] mx-auto">
+              <div className="md:7/12 lg:w-6/12 text-2xl w-[267px] mx-auto">
                 <h2 className="text-4xl text-gray-900 font-bold md:text-7xl">
                   How V-book initiated ?
                 </h2>
@@ -65,7 +80,7 @@ const About = () => {
                     </span>
                   </h2>
                   <p className="text-2xl text-gray-700 ">
-                    <ul className="list-disc p-2 flex flex-col gap-4 md:w-[600px] w-[300px] md:text-3xl">
+                    <ul className="list-disc p-2 flex flex-col gap-4 md:w-[600px] w-[267px] md:text-3xl">
                       <li>
                         We believe that everyone has something valuable to
                         teach, regardless of their background or expertise
@@ -141,7 +156,7 @@ const About = () => {
                 />
               </div>
               <div className="md:7/12 lg:w-6/12 text-2xl w-[300px] mx-auto">
-                <ul className="list-disc p-4 flex flex-col gap-4 md:w-[700px] w-[300px] md:text-3xl tracking-widest md:mt-8">
+                <ul className="list-disc p-4 flex flex-col gap-4 md:w-[700px] w-[267px] md:text-3xl tracking-widest md:mt-8">
                   <li>
                     In recent decades, there have been numerous transformations
                     in the world of books, yet few have focused on addressing

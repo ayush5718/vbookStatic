@@ -1,19 +1,20 @@
 import { useState } from "react";
 // import GoogleIcon from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 import "./Register.css";
 const TeacherRegister = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    password: "",
-    cPassword: "",
-    dob: "",
     phone: "",
-    highestDegree: "",
+    whatsapp_number: "",
+    dob: "",
+    highest_qualification: "",
     address: "",
-    isTeacher: true,
   });
 
   const handleFormData = (e) => {
@@ -23,12 +24,35 @@ const TeacherRegister = () => {
     });
     console.log(formData);
   };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const response = await axios.post(
+        "https://vbookbackend.onrender.com/pre-register/register-teacher",
+        formData
+      );
+      console.log("Form submitted successfully!", response.data);
+      setSubmitted(true);
+    } catch (error) {
+      console.log("error submitting", error);
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div className="teacherRegister">
-      <section id="home" class="contact-home">
-        <h1 className="text-8xl text-white font-bold"> Join Us</h1>
-      </section>
-      <form className="register_form lg:text-3xl lg:m-10  lg:border-2 border-blue-400 lg:flex lg:flex-col lg:gap-10">
+      <h1 className="md:text-6xl text-gray-800 font-bold md:text-center text-[20px] mb-2 mt-8">
+        <span className="shadow-md py-3 px-4 shadow-gray-100">
+          {" "}
+          Teacher Registration Form
+        </span>
+      </h1>
+      <form
+        className="register_form md:text-3xl md:m-10  md:border-2 border-blue-400 md:flex md:flex-col md:gap-10"
+        onSubmit={handleSubmit}
+      >
         <input
           placeholder="Enter your Name"
           type="text"
@@ -36,6 +60,7 @@ const TeacherRegister = () => {
           name="name"
           value={formData.name}
           onChange={handleFormData}
+          className="text-3xl"
         />
         <input
           placeholder="Email"
@@ -44,6 +69,7 @@ const TeacherRegister = () => {
           name="email"
           value={formData.email}
           onChange={handleFormData}
+          className="text-3xl lowercase"
         />
         <input
           placeholder="Phone Number"
@@ -52,14 +78,16 @@ const TeacherRegister = () => {
           name="phone"
           value={formData.phone}
           onChange={handleFormData}
+          className="text-3xl"
         />
         <input
           placeholder="Whats App Number"
           type="number"
           required
-          name="phone"
-          value={formData.phone}
+          name="whatsapp_number"
+          value={formData.whatsapp_number}
           onChange={handleFormData}
+          className="text-3xl"
         />
         {/* <input
           placeholder="Highest Qualification"
@@ -71,11 +99,17 @@ const TeacherRegister = () => {
         /> */}
 
         <label htmlFor="qual" value="highest qual border-b-2"></label>
-        <select name="qual" id="" className="mt-2 block">
+        <select
+          name="highest_qualification" // Update name to match state key
+          value={formData.highest_qualification}
+          onChange={handleFormData}
+          className="mt-2 block text-3xl"
+          required
+        >
           <option value="">Choose Your Highest Qualification</option>
-          <option value="">class 12</option>
-          <option value="">Under Graduate</option>
-          <option value="">Post Graduate</option>
+          <option value="class 12">Class 12</option>
+          <option value="Under Graduate">Under Graduate</option>
+          <option value="Post Graduate">Post Graduate</option>
         </select>
         <hr />
         <br />
@@ -89,6 +123,7 @@ const TeacherRegister = () => {
           required
           onChange={handleFormData}
           style={{ marginTop: "0" }}
+          className="text-3xl"
         />
         <input
           placeholder="Address"
@@ -97,25 +132,23 @@ const TeacherRegister = () => {
           value={formData.address}
           required
           onChange={handleFormData}
-        />
-        <input
-          placeholder="Password"
-          type="password"
-          required
-          name="password"
-          value={formData.password}
-          onChange={handleFormData}
-        />
-        <input
-          placeholder="Confrim Password"
-          type="password"
-          required
-          name="cPassword"
-          value={formData.cPassword}
-          onChange={handleFormData}
+          className="text-3xl"
         />
 
-        <button className="registerButton">Register as a Teacher</button>
+        <div>
+          {loading ? (
+            <div className="loader"></div>
+          ) : (
+            <button
+              type="submit"
+              className={`w-fit rounded border text-3xl border-primary bg-primary p-3 text-white transition hover:bg-opacity-90 ${
+                submitted ? "submitted" : ""
+              }`}
+            >
+              {submitted ? "Submitted" : "Submit"}
+            </button>
+          )}
+        </div>
         <div className="register_form_divider">
           <hr />
 

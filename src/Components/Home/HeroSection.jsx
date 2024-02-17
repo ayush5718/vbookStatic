@@ -1,7 +1,5 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-
-import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./HeroSection.scss";
 import Slider from "react-slick";
@@ -30,20 +28,21 @@ import becomeatutor from "/src/assets/images/becomeAtutor.png";
 // };
 
 const HeroSection = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scroll behavior
+    });
+  };
   return (
-    <div class="mt-[60px]">
+    <div>
       {/* hero section carousel */}
 
       <SliderHero />
-      {/* <div class="wave-section">
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
-      </div> */}
+
       <div className="main-cont px-4">
         <Services />
-        {/* <Counters /> */}
-        {/* why vbook */}
+
         <section
           style={{ display: "flex", justifyContent: "center" }}
           className=""
@@ -54,7 +53,7 @@ const HeroSection = () => {
               justifyContent: "center",
               alignItems: "center",
               margin: 20,
-              width: "86%",
+              width: "100%",
               gap: 45,
               flexWrap: "wrap",
             }}
@@ -62,8 +61,8 @@ const HeroSection = () => {
             <div
               style={{
                 padding: 10,
-                width: "30%",
-                height: "60%",
+                // width: "20%",
+                // height: "60%",
                 color: "#000",
                 backgroundColor: "#e9aa1b",
                 display: "flex",
@@ -73,6 +72,7 @@ const HeroSection = () => {
                 flexGrow: "inherit",
                 borderRadius: 10,
               }}
+              className="w-full md:w-[20%] md:h-[100%]"
               onmouseover="this.style.backgroundColor='#c28e14'"
               onmouseout="this.style.backgroundColor='#fbb516'"
             >
@@ -124,9 +124,10 @@ const HeroSection = () => {
             <div
               style={{
                 padding: 10,
-                width: "30%",
+                // width: "20%",
+                // height: "60%",
                 color: "#505050",
-                height: "60%",
+                // height: "60%",
                 backgroundColor: "#2cb04a",
                 display: "flex",
                 justifyContent: "center",
@@ -135,6 +136,7 @@ const HeroSection = () => {
                 flexGrow: "inherit",
                 borderRadius: 10,
               }}
+              className="w-full md:w-[20%] md:h-[100%]"
               onmouseover="this.style.backgroundColor='#0d5f20'"
               onmouseout="this.style.backgroundColor='#2cb04a'"
             >
@@ -185,9 +187,10 @@ const HeroSection = () => {
             <div
               style={{
                 padding: 10,
-                width: "30%",
+                // width: "20%",
+                // height: "60%",
                 color: "#505050",
-                height: "60%",
+
                 backgroundColor: "#6454a4",
                 display: "flex",
                 justifyContent: "center",
@@ -197,6 +200,7 @@ const HeroSection = () => {
                 borderRadius: 10,
                 transition: "background-color 0.3s",
               }}
+              className="w-full md:w-[20%] md:h-[100%]"
               onmouseover="this.style.backgroundColor='#3b3161'"
               onmouseout="this.style.backgroundColor='#6454a4'"
             >
@@ -245,9 +249,9 @@ const HeroSection = () => {
             <div
               style={{
                 padding: 10,
-                width: "30%",
+                // width: "20%",
+                // height: "60%",
                 color: "#505050",
-                height: "60%",
                 backgroundColor: "#f05940",
                 display: "flex",
                 justifyContent: "center",
@@ -256,6 +260,7 @@ const HeroSection = () => {
                 flexGrow: "inherit",
                 borderRadius: 10,
               }}
+              className="w-full md:w-[20%] md:h-[100%]"
               onmouseover="this.style.backgroundColor='#912816'"
               onmouseout="this.style.backgroundColor='#f05940'"
             >
@@ -330,7 +335,10 @@ const HeroSection = () => {
                   your unique teaching style with the help of V-Book tools and
                   your teaching skills.
                 </p>
-                <button className="bg-[#01adef] mt-4 px-7 py-7 md:text-3xl text-3xl text-white font-bold rounded">
+                <button
+                  className="bg-[#01adef] mt-4 px-7 py-7 md:text-3xl text-3xl text-white font-bold rounded"
+                  onClick={scrollToTop}
+                >
                   <NavLink to="/teacher">create your 1st book</NavLink>
                 </button>
               </div>

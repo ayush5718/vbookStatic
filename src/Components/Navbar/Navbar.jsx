@@ -21,11 +21,11 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
-  const closeMenuOnMobile = () => {
-    if (window.innerWidth <= 1150) {
-      setShowMenu(false);
-    }
-  };
+  // const closeMenuOnMobile = () => {
+  //   if (window.innerWidth <= 1150) {
+  //     setShowMenu(false);
+  //   }
+  // };
   const navItems = [
     { name: "Home", url: "/", icon: <FaHome /> },
     {
@@ -43,15 +43,11 @@ const Navbar = () => {
     navigate(navItem.url);
   };
   return (
-    <nav class="fixed top-0 w-full  bg-[#132146] flex justify-between items-center text-gray-50 border-b-[1px] border-gray-400 shadow-md shadow-gray-500 p-2 z-[9000] text-[1.2rem] relative">
+    <nav class="fixed top-0 w-full  bg-[#02022a] flex justify-between items-center text-gray-50 border-b-[1px] border-gray-400 shadow-md shadow-gray-500 p-2 z-[9000] text-[1.2rem] relative">
       <div>
-        <img
-          src="https://i.ibb.co/5cwTY0d/sponsor12.png"
-          alt="logo.png"
-          class="w-[110px] h-[50px]"
-        />
+        <img src={logo} alt="logo.png" class="w-[170px] h-[50px]" />
       </div>
-      <div class="items-center gap-4 text-center hidden md:flex">
+      <div class="items-center gap-4 text-center hidden md:flex md:text-3xl">
         {navItems.map((navItem, index) => (
           <span
             onClick={() => handleNavItemClick(navItem)}
@@ -67,7 +63,7 @@ const Navbar = () => {
         ))}
 
         <span class="border-[#01ADEF] border-[1px] text-[#01ADEF] hover:bg-[#01ADEF] hover:text-gray-50 cursor-pointer py-[2px] px-[8px] rounded-[2px]">
-          Student Pre Registeration
+          <NavLink to="/registeration"> Student Pre Registeration</NavLink>
         </span>
       </div>
       {!showMenu ? (
@@ -101,8 +97,9 @@ const Navbar = () => {
             <span>{navItem.name}</span>
           </div>
         ))}
+
         <span class="border-[#01ADEF] border-[1px] text-[#01ADEF] hover:bg-[#01ADEF] hover:text-gray-50 cursor-pointer py-[4px] px-[8px] rounded-[2px] text-center w-full">
-          Student Pre Registeration
+          <NavLink to="/registeration">Student Pre Registeration</NavLink>
         </span>
       </div>
     </nav>
